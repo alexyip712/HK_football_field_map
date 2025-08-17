@@ -391,29 +391,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 map.on('touchmove', () => {
                     clearTimeout(longPressTimer);
                 });
-            } /*catch (e) {
+            } catch (e) {
                 console.error('地圖加載錯誤:', e);
                 const errorDiv = document.createElement('div');
-                errorDiv.className = 'error';
-                errorDiv.textContent = '地圖加載失敗，請檢查網絡或控制台錯誤';
-                document.body.appendChild(errorDiv);
+                //errorDiv.className = 'error';
+                //errorDiv.textContent = '地圖加載失敗，請檢查網絡或控制台錯誤';
+                //document.body.appendChild(errorDiv);
             }*/
         });
 
-        /*map.on('error', (e) => {
+        map.on('error', (e) => {
             console.error('MapLibre 錯誤:', e);
             const errorDiv = document.createElement('div');
-            errorDiv.className = 'error';
-            errorDiv.textContent = '地圖初始化失敗，請檢查網絡或控制台錯誤';
-            document.body.appendChild(errorDiv);
+            //errorDiv.className = 'error';
+            //errorDiv.textContent = '地圖初始化失敗，請檢查網絡或控制台錯誤';
+            //document.body.appendChild(errorDiv);
         });
 
         map.on('tileerror', (e) => {
             console.error('圖磚加載錯誤:', e);
             const errorDiv = document.createElement('div');
-            errorDiv.className = 'error';
-            errorDiv.textContent = '圖磚加載失敗，請檢查網絡或稍後重試';
-            document.body.appendChild(errorDiv);
+            //errorDiv.className = 'error';
+            //errorDiv.textContent = '圖磚加載失敗，請檢查網絡或稍後重試';
+            //document.body.appendChild(errorDiv);
         });
 
         if ('serviceWorker' in navigator) {
@@ -426,8 +426,8 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (e) {
         console.error('初始化錯誤:', e);
         const errorDiv = document.createElement('div');
-        errorDiv.className = 'error';
-        errorDiv.textContent = '地圖初始化失敗，請檢查網絡或控制台錯誤';
-        document.body.appendChild(errorDiv);
-    }*/
+        //errorDiv.className = 'error';
+        //errorDiv.textContent = '地圖初始化失敗，請檢查網絡或控制台錯誤';
+        //document.body.appendChild(errorDiv);
+    }
 });
