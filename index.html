@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香港硬地足球場地圖</title>
+    <link href="https://unpkg.com/maplibre-gl@4.7.0/dist/maplibre-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <div id="map"></div>
+    <div id="info" class="card--custom card-hidden">
+        <div class="card-header">
+            <span id="branchStatus"></span>
+            <span class="close">&times;</span>
+        </div>
+        <div class="card-body">
+            <span id="branchName"></span>
+            <p id="branchdistrict"></p>
+            <p id="branchDetail"></p>
+            <ul style="list-style: none; padding: 0;">
+                <li id="facilities"></li>
+                <li id="phone"></li>
+                <li id="opening_hours"></li>
+                <li id="number"></li>
+            </ul>
+            <a href="https://forms.gle/example" id="issueReport">資料有誤？請報料</a>
+        </div>
+        <div class="card-footer">
+            <button id="toggleCard" class="toggle-button" aria-expanded="false">展開</button>
+        </div>
+    </div>
+    <div id="searchFilter" class="search-filter">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="輸入足球場名稱、地址或地區" aria-label="搜索足球場" aria-autocomplete="list" autocomplete="off">
+            <div id="suggestions" class="suggestions" role="listbox"></div>
+        </div>
+        <select id="districtFilter" aria-label="按地區過濾">
+            <option value="">所有地區</option>
+        </select>
+        <button id="clearFilter" class="clear-button">重設</button>
+    </div>
+    <script src="https://unpkg.com/maplibre-gl@4.7.0/dist/maplibre-gl.js"></script>
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+    <script src="football_fields.js"></script>
+    <script src="maplibre.js"></script>
+</body>
+</html>
