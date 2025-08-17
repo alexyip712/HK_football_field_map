@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }]
             },
             center: [114.17475, 22.367533],
-            zoom: 11,
+            zoom: 12,
             minZoom: 11,
             maxZoom: 19,
             maxBounds: [[113.75, 22.15], [114.481, 22.571]]
