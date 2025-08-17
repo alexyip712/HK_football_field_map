@@ -397,7 +397,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 //errorDiv.className = 'error';
                 //errorDiv.textContent = '地圖加載失敗，請檢查網絡或控制台錯誤';
                 //document.body.appendChild(errorDiv);
-            }*/
+            }
         });
 
         map.on('error', (e) => {
