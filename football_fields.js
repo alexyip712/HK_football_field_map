@@ -1685,7 +1685,7 @@ var seven_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [114.20648901913431, 22.382472722254512]
+                "coordinates": [114.20636016482717, 22.382595184878024]
             },
             "properties": {
                 "cate": "七人硬地足球場",
@@ -2357,7 +2357,7 @@ var seven_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [114.17236127966021, 22.31840287937599]
+                "coordinates": [114.17239248326366, 22.318278443947175]
             },
             "properties": {
                 "cate": "七人硬地足球場",
@@ -2378,7 +2378,7 @@ var seven_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [114.1631748099431, 22.3246688206088]
+                "coordinates": [114.16328451656778, 22.324577481032723]
             },
             "properties": {
                 "cate": "七人硬地足球場",
@@ -3959,7 +3959,7 @@ var five_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [114.20648396850981, 22.382476748974714]
+                "coordinates": [114.20662172039415, 22.38234596074228]
             },
             "properties": {
                 "cate": "五人硬地足球場",
@@ -4631,7 +4631,7 @@ var five_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [114.17236247639771, 22.318424623163363]
+                "coordinates": [114.1723294528493, 22.318600063819392]
             },
             "properties": {
                 "cate": "五人硬地足球場",
@@ -4652,7 +4652,7 @@ var five_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [114.16315175777011, 22.324660493550986]
+                "coordinates": [114.16301570930986, 22.32477147866454]
             },
             "properties": {
                 "cate": "五人硬地足球場",

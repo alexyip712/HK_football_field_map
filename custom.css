@@ -22,7 +22,8 @@ body {
     transition: opacity 0.33s linear, height 0.3s ease;
     border-radius: 8px;
     border: none;
-    line-height: 1.8rem;
+    line-height: 0rem;
+    margin-top: 2rem;
 }
 
 .card-header {
@@ -44,20 +45,25 @@ body {
     padding: 0.75rem 1.25rem !important;
 }
 
-.toggle-button {
-    background: #3498db;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+.toggle-icon {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: 8px;
     cursor: pointer;
+    color: #3498db;
+    z-index: 10;
+    transition: color 0.2s;
 }
 
-.toggle-button:hover {
-    background: #2980b9;
+.toggle-icon:hover {
+    color: #2980b9;
 }
 
 .clear-button {
+    display: block;
     background: #e74c3c;
     color: white;
     border: none;
@@ -65,7 +71,6 @@ body {
     padding: 0 1rem;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 0.5rem;
     box-sizing: border-box;
     font-size: 1rem;
 }
@@ -78,36 +83,151 @@ body {
     .card--custom {
         width: 100%;
         bottom: 0;
-        max-height: 60%;
+        max-height: 30%;
         height: 30%;
+        overflow-y: auto;
+        font-size: 0.85rem;
+        line-height: 1.3;
     }
     .card--custom.expanded {
+        max-height: 60%;
         height: 60%;
+    }
+    .card-body {
+        max-height: calc(60% - 80px);
+    }
+    .search-filter {
+        position: absolute;
+        font-size: 12px;
+        top: 5px;
+        left: 45px;
+        flex-direction: column;
+        gap: 8px;
+        background: white;
+        padding: 10px;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 1002;
+        overflow: visible;
+    }
+    #searchInput, #districtFilter, #clearFilter {
+        display: block;
+        width: 40vw;
+        height: 32px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    #suggestions {
+        width: 40vw;
+        max-height: 200px;
+        overflow-y: auto;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 1003;
+    }
+    .layer-control {
+        display: flex;
+        
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 6px;
+        background: white;
+        padding: 0px;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        z-index: 1001;
+    }
+    #searchFilter .layer-control {
+        display: flex !important;
     }
 }
 
-@media only screen and (min-width: 835px) {
+@media only screen and (min-width: 836px) {
     .card--custom {
         max-width: 350px;
         max-height: 80%;
         top: 130px;
         left: 10px;
         border-radius: 8px !important;
+        font-size: 1rem;
+        line-height: 1.5;
+        overflow-y: auto;
     }
+    .card-body {
+        max-height: calc(80% - 80px);
+    }
+    .toggle-icon {
+        display: none;
+    }
+    .search-filter {
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: white;
+        padding: 10px;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 1002;
+    }
+    #searchInput, #districtFilter, #clearFilter {
+        display: block;
+        width: 200px;
+        height: 32px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    #suggestions {
+        width: 200px;
+        max-height: 200px;
+        overflow-y: auto;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 1003;
+    }
+    .layer-control {
+        position: absolute;        
+        top: 10px;
+        right: 10px;
+        background: white;
+        padding: 5px;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        z-index: 1002;
+    }
+    #searchFilter .layer-control {
+        display: none !important;
+    }
+    
 }
 
 .close {
     position: absolute;
-    top: 0.75rem;
-    right: 0.75rem;
-    z-index: 2;
-    font-size: 1.5rem;
-    font-weight: 700;
+    top: 10px;
+    right: 10px;
+    font-size: 1.2rem;
     line-height: 1;
+    padding: 8px;
     color: #000;
     text-shadow: 0 1px 0 #fff;
     opacity: 0.5;
     cursor: pointer;
+    z-index: 10;
+    transition: color 0.2s;
+}
+
+.close:hover {
+    color: #c0392b;
 }
 
 .card-hidden {
@@ -118,11 +238,11 @@ body {
 
 .card--custom #branchStatus {
     margin-left: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.26rem;
     padding: 1px 10px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     border-radius: 0.8rem;
-    font-weight: 400;
+    font-weight: 350;
     display: inline-block;
     color: black;
 }
@@ -136,27 +256,30 @@ body {
 }
 
 .card--custom #branchName {
-    margin-left: 2rem;
-    font-size: 1.8rem;
+    margin-left: 1rem;
+    font-size: 1.73rem;
     font-weight: 500;
     display: block;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.3rem;
 }
 
 .card--custom #branchdistrict {
     margin-left: 2rem;
     margin-bottom: 0;
+    font-size: 1.2rem;
 }
 
 .card--custom #branchDetail {
     margin-left: 2rem;
     margin-bottom: 0;
+    font-size: 1.2rem;
 }
 
 .maplibregl-ctrl-group {
     background: white;
     border-radius: 0.25rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
 }
 
 .maplibregl-ctrl-group button {
@@ -192,7 +315,7 @@ body {
     color: white;
     padding: 10px;
     border-radius: 5px;
-    z-index: 1000;
+    z-index: 1004;
 }
 
 .zoom-alert {
@@ -204,67 +327,31 @@ body {
     color: white;
     padding: 10px;
     border-radius: 5px;
-    z-index: 1000;
+    z-index: 1004;
 }
 
 #issueReport {
     margin-left: 2rem;
     display: block;
-    margin-top: 0.75rem;
-}
-
-.search-filter {
-    position: absolute;
-    top: 10px;
-    left: 50px;
-    background: white;
-    padding: 10px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
+    margin-bottom: 1rem;
 }
 
 .search-container {
     position: relative;
 }
 
-#searchInput {
-    width: 200px;
-    height: 32px;
-    padding: 5px;
-    margin-bottom: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-#districtFilter {
-    width: 200px;
-    height: 32px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
 .suggestions {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 200px;
-    max-height: 200px;
-    overflow-y: auto;
-    background: white;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    display: none;
-    z-index: 1001;
 }
 
 .suggestion-item {
     padding: 5px 10px;
     cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .suggestion-item:hover {
