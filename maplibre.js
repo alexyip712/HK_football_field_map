@@ -17,20 +17,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     'id': 'osm-tiles',
                     'type': 'raster',
                     'source': 'osm-tiles',
-                    'minzoom': 10,
+                    'minzoom': 9,
                     'maxzoom': 21
                 }]
             },
             center: [114.17475, 22.367533],
             zoom: 12,
-            minZoom: 11,
+            minZoom: 10,
             maxZoom: 19,
             maxBounds: [[113.75, 22.15], [114.481, 22.571]]
         });
 
         const layerControl = {
+            '五人硬地足球場': { layerId: 'five-a-side', labelId: 'five-a-side-labels', color: 'green' },
             '七人硬地足球場': { layerId: 'seven-a-side', labelId: 'seven-a-side-labels', color: 'blue' },
-            '五人硬地足球場': { layerId: 'five-a-side', labelId: 'five-a-side-labels', color: 'green' }
+            '七人天然草足球場': { layerId: 'natural-seven-a-side', labelId: 'natural-seven-a-side-labels', color: 'darkgreen' },
+            '七人人造草足球場': { layerId: 'artificial-seven-a-side', labelId: 'artificial-seven-a-side-labels', color: 'limegreen' },
+            '十一人人造草足球場': { layerId: 'artificial-11-a-side', labelId: 'artificial-11-a-side-labels', color: 'turquoise' },
+            '十一人天然草足球場': { layerId: 'natural-11-a-side', labelId: 'natural-11-a-side-labels', color: 'teal' }
         };
 
         let currentPopup = null;
@@ -50,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const branchDetail = document.getElementById('branchDetail');
             const branchDistrict = document.getElementById('branchdistrict');
             const facilities = document.getElementById('facilities');
+            const other = document.getElementById('other');            
             const phone = document.getElementById('phone');
             const opening_hours = document.getElementById('opening_hours');
             const number = document.getElementById('number');
@@ -59,6 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
             phone.innerHTML = properties.phone ? `<li>電話：${properties.phone}</li>` : '<li>電話：未提供</li>';
             opening_hours.innerHTML = properties.opening_hours ? `<li>開放時間：${properties.opening_hours}</li>` : '<li>開放時間：未提供</li>';
             number.innerHTML = properties.number ? `<li>球場數目：${properties.number}</li>` : '<li>球場數目：未提供</li>';
+            other.innerHTML = properties.other ? `<li>其他：${properties.other}</li>` : '<li>其他：未提供</li>';
+            
 
             if (properties) {
                 info.classList.remove('card-hidden');
@@ -80,7 +87,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         function filterData(searchTerm, district) {
-            let filteredFeatures = seven_a_side_list.features.concat(five_a_side_list.features);
+            let filteredFeatures = seven_a_side_list.features
+                .concat(five_a_side_list.features)
+                .concat(artificial_11_a_side_list.features)
+                .concat(natural_11_a_side_list.features)
+                .concat(natural_seven_a_side_list.features)
+                .concat(artificial_seven_a_side_list.features);
             filteredFeatures = filteredFeatures.map(f => ({
                 ...f,
                 properties: {
@@ -111,12 +123,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 suggestions.style.display = 'none';
                 return;
             }
-            const filtered = filterData(searchTerm, '').features.slice(0, 10);
+            const filtered = filterData(searchTerm, '').features.slice(0, );
             if (filtered.length) {
                 filtered.forEach(f => {
                     const div = document.createElement('div');
                     div.className = 'suggestion-item';
-                    div.textContent = f.properties.name_chi + (f.properties.cate === '七人硬地足球場' ? ' (7)' : ' (5)');
+                    div.textContent = f.properties.name_chi + (f.properties.cate.includes('十一人') ? ' (11)' : f.properties.cate.includes('七人') ? ' (7)' : ' (5)');
                     div.setAttribute('role', 'option');
                     div.onclick = () => {
                         searchInput.value = f.properties.name_chi;
@@ -173,15 +185,44 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 map.addLayer({
+                    id: 'natural-seven-a-side',
+                    type: 'circle',
+                    source: 'football-fields',
+                    filter: ['==', 'cate', '七人天然草足球場'],
+                    paint: {
+                        'circle-radius': 12,
+                        'circle-color': '#fbff00ff',
+                        'circle-opacity': 0.7,
+                        'circle-stroke-color': '#838101ff',
+                        'circle-stroke-width': 2.2
+                    }
+                });
+
+                map.addLayer({
+                    id: 'artificial-seven-a-side',
+                    type: 'circle',
+                    source: 'football-fields',
+                    filter: ['==', 'cate', '七人人造草足球場'],
+                    paint: {
+                        'circle-radius': 12,
+                        'circle-color': '#32CD32',
+                        'circle-opacity': 0.7,
+                        'circle-stroke-color': '#228B22',
+                        'circle-stroke-width': 2.2
+                    }
+                });
+
+
+                map.addLayer({
                     id: 'five-a-side',
                     type: 'circle',
                     source: 'football-fields',
                     filter: ['==', 'cate', '五人硬地足球場'],
                     paint: {
-                        'circle-radius': 13,
-                        'circle-color': '#2ecc71',
+                        'circle-radius': 12,
+                        'circle-color': '#c93939ff',
                         'circle-opacity': 0.7,
-                        'circle-stroke-color': '#2ab664ff',
+                        'circle-stroke-color': '#c92d2dff',
                         'circle-stroke-width': 2.2
                     }
                 });
@@ -192,30 +233,59 @@ document.addEventListener('DOMContentLoaded', () => {
                     source: 'football-fields',
                     filter: ['==', 'cate', '七人硬地足球場'],
                     paint: {
-                        'circle-radius': 13,
-                        'circle-color': '#3498db',
+                        'circle-radius': 12,
+                        'circle-color': '#509cf3ff',
                         'circle-opacity': 0.7,
-                        'circle-stroke-color': '#3397daff',
+                        'circle-stroke-color': '#3e74bbff',
                         'circle-stroke-width': 2                        
                     }
                 });
 
                 map.addLayer({
+                    id: 'artificial-11-a-side',
+                    type: 'circle',
+                    source: 'football-fields',
+                    filter: ['==', 'cate', '十一人人造草足球場'],
+                    paint: {
+                        'circle-radius': 12,
+                        'circle-color': '#ffa735ff',
+                        'circle-opacity': 0.7,
+                        'circle-stroke-color': '#db5800ff',
+                        'circle-stroke-width': 2.2
+                    }
+                });
+
+                map.addLayer({
+                    id: 'natural-11-a-side',
+                    type: 'circle',
+                    source: 'football-fields',
+                    filter: ['==', 'cate', '十一人天然草足球場'],
+                    paint: {
+                        'circle-radius': 12,
+                        'circle-color': '#b03dd3ff',
+                        'circle-opacity': 0.7,
+                        'circle-stroke-color': '#672885ff',
+                        'circle-stroke-width': 2.2
+                    }
+                });
+
+
+                map.addLayer({
                     id: 'seven-a-side-labels',
                     type: 'symbol',
                     source: 'football-fields',
-                    minzoom: 13.5,
+                    minzoom: 14,
                     filter: ['==', 'cate', '七人硬地足球場'],
                     layout: {
                         'text-field': ['get', 'clean_name_chi'],
                         'text-font': ['Noto Sans TC Bold'],
-                        'text-size': 15,
+                        'text-size': 13,
                         'text-offset': [0, 1.5],
                         'text-anchor': 'top',
                         'text-allow-overlap': false
                     },
                     paint: {
-                        'text-color': '#236794ff',
+                        'text-color': '#143674ff',
                         'text-halo-color': '#fff',
                         'text-halo-width': 2.2
                     }
@@ -225,24 +295,114 @@ document.addEventListener('DOMContentLoaded', () => {
                     id: 'five-a-side-labels',
                     type: 'symbol',
                     source: 'football-fields',
-                    minzoom: 13.5,
+                    minzoom: 14,
                     filter: ['==', 'cate', '五人硬地足球場'],
                     layout: {
                         'text-field': ['get', 'clean_name_chi'],
                         'text-font': ['Noto Sans TC Bold'],
-                        'text-size': 15,
+                        'text-size': 13,
                         'text-offset': [0, 1.5],
                         'text-anchor': 'top',
                         'text-allow-overlap': false
                     },
                     paint: {
-                        'text-color': '#1d7743ff',
+                        'text-color': '#6b0505ff',
                         'text-halo-color': '#fff',
                         'text-halo-width': 2.2
                     }
                 });
 
-                const districts = [...new Set(seven_a_side_list.features.concat(five_a_side_list.features).map(f => f.properties.district))];
+                map.addLayer({
+                    id: 'artificial-11-a-side-labels',
+                    type: 'symbol',
+                    source: 'football-fields',
+                    minzoom: 14,
+                    filter: ['==', 'cate', '十一人人造草足球場'],
+                    layout: {
+                        'text-field': ['get', 'clean_name_chi'],
+                        'text-font': ['Noto Sans TC Bold'],
+                        'text-size': 13,
+                        'text-offset': [0, 1.5],
+                        'text-anchor': 'top',
+                        'text-allow-overlap': false
+                    },
+                    paint: {
+                        'text-color': '#a84300ff',
+                        'text-halo-color': '#fff',
+                        'text-halo-width': 2.2
+                    }
+                });
+
+                map.addLayer({
+                    id: 'natural-11-a-side-labels',
+                    type: 'symbol',
+                    source: 'football-fields',
+                    minzoom: 14,
+                    filter: ['==', 'cate', '十一人天然草足球場'],
+                    layout: {
+                        'text-field': ['get', 'clean_name_chi'],
+                        'text-font': ['Noto Sans TC Bold'],
+                        'text-size': 13,
+                        'text-offset': [0, 1.5],
+                        'text-anchor': 'top',
+                        'text-allow-overlap': false
+                    },
+                    paint: {
+                        'text-color': '#3a0055ff',
+                        'text-halo-color': '#fff',
+                        'text-halo-width': 2.2
+                    }
+                });
+
+                map.addLayer({
+                    id: 'natural-seven-a-side-labels',
+                    type: 'symbol',
+                    source: 'football-fields',
+                    minzoom: 14,
+                    filter: ['==', 'cate', '七人天然草足球場'],
+                    layout: {
+                        'text-field': ['get', 'clean_name_chi'],
+                        'text-font': ['Noto Sans TC Bold'],
+                        'text-size': 13,
+                        'text-offset': [0, 1.5],
+                        'text-anchor': 'top',
+                        'text-allow-overlap': false
+                    },
+                    paint: {
+                        'text-color': '#fffd75ff',
+                        'text-halo-color': '#000000ff',
+                        'text-halo-width': 2
+                    }
+                });
+
+                map.addLayer({
+                    id: 'artificial-seven-a-side-labels',
+                    type: 'symbol',
+                    source: 'football-fields',
+                    minzoom: 14,
+                    filter: ['==', 'cate', '七人人造草足球場'],
+                    layout: {
+                        'text-field': ['get', 'clean_name_chi'],
+                        'text-font': ['Noto Sans TC Bold'],
+                        'text-size': 13,
+                        'text-offset': [0, 1.5],
+                        'text-anchor': 'top',
+                        'text-allow-overlap': false
+                    },
+                    paint: {
+                        'text-color': '#1B761B',
+                        'text-halo-color': '#fff',
+                        'text-halo-width': 2.2
+                    }
+                });
+
+                const districts = [...new Set(seven_a_side_list.features
+                    .concat(five_a_side_list.features)
+                    .concat(artificial_11_a_side_list.features)
+                    .concat(natural_11_a_side_list.features)
+                    .concat(natural_seven_a_side_list.features)
+                    .concat(artificial_seven_a_side_list.features)
+                    .map(f => f.properties.district))];
                 districts.forEach(district => {
                     const option = document.createElement('option');
                     option.value = district;
@@ -252,7 +412,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const layerControlDiv = document.createElement('div');
                 layerControlDiv.className = 'layer-control';
-                //layerControlDiv.id = 'control_box';
                 for (const [label, { layerId, labelId, color }] of Object.entries(layerControl)) {
                     const div = document.createElement('div');
                     div.style.padding = '5px';
@@ -267,9 +426,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     const labelElem = document.createElement('label');
                     labelElem.htmlFor = `${layerId}-checkbox`;
                     const iconSpan = document.createElement('span');
-                    iconSpan.textContent = color === 'blue' ? '🔵' : '🟢';
+                    iconSpan.textContent = color === 'blue' ? '🔵' :
+                                         color === 'green' ? '🔴' : 
+                                         color === 'turquoise' ? '🟠' : 
+                                         color === 'teal' ? '🟣' : 
+                                         color === 'darkgreen' ? '🟡' : '🟢';
                     iconSpan.style.marginRight = '5px';
-                    iconSpan.setAttribute('aria-label', color === 'blue' ? '藍色圓點表示七人硬地足球場' : '綠色圓點表示五人硬地足球場');
+                    iconSpan.setAttribute('aria-label', 
+                        color === 'blue' ? '藍色圓點表示七人硬地足球場' : 
+                        color === 'green' ? '綠色圓點表示五人硬地足球場' : 
+                        color === 'turquoise' ? '藍綠圓點表示十一人人造草足球場' : 
+                        color === 'teal' ? '深藍綠圓點表示十一人天然草足球場' : 
+                        color === 'darkgreen' ? '深綠圓點表示七人天然草足球場' : 
+                        '淺綠圓點表示七人人造草足球場');
                     labelElem.appendChild(iconSpan);
                     labelElem.appendChild(document.createTextNode(label));
                     div.appendChild(checkbox);
@@ -277,7 +446,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     layerControlDiv.appendChild(div);
                 }
 
-                // 確保 layerControlDiv 正確附加並移除現有重複元素
                 const existingLayerControl = document.querySelector('.layer-control');
                 if (existingLayerControl) {
                     existingLayerControl.remove();
@@ -291,7 +459,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     console.log('桌面版：已附加 .layer-control 至 body');
                 }
 
-                // 監聽視窗大小變化，動態調整 layerControlDiv 位置
                 window.addEventListener('resize', () => {
                     const existingLayerControl = document.querySelector('.layer-control');
                     if (existingLayerControl) {
@@ -351,15 +518,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
 
-                map.on('click', ['seven-a-side', 'five-a-side'], (e) => {
-                    const features = map.queryRenderedFeatures(e.point, { layers: ['seven-a-side', 'five-a-side'] });
+                map.on('click', ['seven-a-side', 'five-a-side', 'artificial-11-a-side', 'natural-11-a-side', 'natural-seven-a-side', 'artificial-seven-a-side'], (e) => {
+                    const features = map.queryRenderedFeatures(e.point, { layers: ['seven-a-side', 'five-a-side', 'artificial-11-a-side', 'natural-11-a-side', 'natural-seven-a-side', 'artificial-seven-a-side'] });
                     if (features.length) {
                         updateInfo(features[0].properties);
                         map.flyTo({ center: features[0].geometry.coordinates, zoom: 16.9 });
                     }
                 });
 
-                map.on('mouseenter', ['seven-a-side', 'five-a-side'], (e) => {
+                map.on('mouseenter', ['seven-a-side', 'five-a-side', 'artificial-11-a-side', 'natural-11-a-side', 'natural-seven-a-side', 'artificial-seven-a-side'], (e) => {
                     map.getCanvas().style.cursor = 'pointer';
                     if (currentPopup) currentPopup.remove();
                     currentPopup = new maplibregl.Popup({ closeButton: false })
@@ -368,12 +535,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         .addTo(map);
                 });
 
-                map.on('mouseleave', ['seven-a-side', 'five-a-side'], () => {
+                map.on('mouseleave', ['seven-a-side', 'five-a-side', 'artificial-11-a-side', 'natural-11-a-side', 'natural-seven-a-side', 'artificial-seven-a-side'], () => {
                     map.getCanvas().style.cursor = '';
                     if (currentPopup) currentPopup.remove();
                 });
 
-                map.on('touchstart', ['seven-a-side', 'five-a-side'], (e) => {
+                map.on('touchstart', ['seven-a-side', 'five-a-side', 'artificial-11-a-side', 'natural-11-a-side', 'natural-seven-a-side', 'artificial-seven-a-side'], (e) => {
                     e.preventDefault();
                     longPressTimer = setTimeout(() => {
                         if (currentPopup) currentPopup.remove();
@@ -384,7 +551,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }, 500);
                 });
 
-                map.on('touchend', ['seven-a-side', 'five-a-side'], () => {
+                map.on('touchend', ['seven-a-side', 'five-a-side', 'artificial-11-a-side', 'natural-11-a-side', 'natural-seven-a-side', 'artificial-seven-a-side'], () => {
                     clearTimeout(longPressTimer);
                 });
 
@@ -394,26 +561,17 @@ document.addEventListener('DOMContentLoaded', () => {
             } catch (e) {
                 console.error('地圖加載錯誤:', e);
                 const errorDiv = document.createElement('div');
-                //errorDiv.className = 'error';
-                //errorDiv.textContent = '地圖加載失敗，請檢查網絡或控制台錯誤';
-                //document.body.appendChild(errorDiv);
             }
         });
 
         map.on('error', (e) => {
             console.error('MapLibre 錯誤:', e);
             const errorDiv = document.createElement('div');
-            //errorDiv.className = 'error';
-            //errorDiv.textContent = '地圖初始化失敗，請檢查網絡或控制台錯誤';
-            //document.body.appendChild(errorDiv);
         });
 
         map.on('tileerror', (e) => {
             console.error('圖磚加載錯誤:', e);
             const errorDiv = document.createElement('div');
-            //errorDiv.className = 'error';
-            //errorDiv.textContent = '圖磚加載失敗，請檢查網絡或稍後重試';
-            //document.body.appendChild(errorDiv);
         });
 
         if ('serviceWorker' in navigator) {
@@ -426,8 +584,5 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (e) {
         console.error('初始化錯誤:', e);
         const errorDiv = document.createElement('div');
-        //errorDiv.className = 'error';
-        //errorDiv.textContent = '地圖初始化失敗，請檢查網絡或控制台錯誤';
-        //document.body.appendChild(errorDiv);
     }
 });

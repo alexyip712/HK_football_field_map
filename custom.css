@@ -130,8 +130,9 @@ body {
         z-index: 1003;
     }
     .layer-control {
+        width: 160px;
+        font-size: 12px;
         display: flex;
-        
         flex-direction: column;
         gap: 0px;
         margin-top: 6px;
@@ -141,9 +142,7 @@ body {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         z-index: 1001;
     }
-    #searchFilter .layer-control {
-        display: flex !important;
-    }
+    
 }
 
 @media only screen and (min-width: 836px) {
@@ -178,7 +177,7 @@ body {
     }
     #searchInput, #districtFilter, #clearFilter {
         display: block;
-        width: 200px;
+        width: 270px;
         height: 32px;
         padding: 5px;
         border: 1px solid #ccc;
@@ -188,6 +187,7 @@ body {
     #suggestions {
         width: 200px;
         max-height: 200px;
+        width: 270px;
         overflow-y: auto;
         background: white;
         border: 1px solid #ccc;
@@ -208,7 +208,6 @@ body {
     #searchFilter .layer-control {
         display: none !important;
     }
-    
 }
 
 .close {
@@ -248,11 +247,27 @@ body {
 }
 
 .card--custom .green {
-    background: rgb(117, 234, 117);
+    background: rgb(255, 165, 165);
 }
 
 .card--custom .blue {
-    background: rgb(138, 190, 245);
+    background: rgb(169, 210, 255);
+}
+
+.card--custom .turquoise {
+    background: rgb(243, 173, 108);
+}
+
+.card--custom .teal {
+    background: rgb(204, 155, 233);
+}
+
+.card--custom .darkgreen {
+    background: rgb(244, 255, 96);
+}
+
+.card--custom .limegreen {
+    background: rgb(77, 238, 77);
 }
 
 .card--custom #branchName {
