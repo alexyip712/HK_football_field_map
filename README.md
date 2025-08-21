@@ -48,7 +48,7 @@ https://alexyip712.github.io/HK_football_field_map/
 - 屬性：類別、名稱、地址、地區、開放時間、設施、電話、狀態同場地數量。
 
 ## 報告問題
-搵到數據錯漏或 Bug？用 App 底「報料」連結，或者喺 GitHub 開 Issue，講清楚問題。
+搵到數據錯漏或 Bug？用 App 底「<a href="https://forms.gle/PCVTRoPjEFushPcN7">報料</a>」連結，或者喺 GitHub 開 Issue，講清楚問題。
 
 ## 鳴謝
 - MapLibre GL JS：開源地圖庫。
