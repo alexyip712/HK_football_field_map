@@ -35,13 +35,13 @@ https://alexyip712.github.io/HK_football_field_map/
 - **OpenStreetMap**：提供基礎地圖圖磚。
 - **Font Awesome**：UI 圖示。
 
-## 數據來源 (Last update 18/08/2025)
-- 五人：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=2&fcid=8
-- 七人：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=3&fcid=8
-- 真草七人：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=3&fcid=6
-- 人造草七人：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=3&fcid=7
-- 真草11人：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=4&fcid=6
-- 人造草11人：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=4&fcid=7<br>
+## 數據來源 (最後更新 18/08/2025)
+- 五人足球場(戶外免費球場)：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=2&fcid=8
+- 七人足球場(戶外免費球場)：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=3&fcid=8
+- 七人足球場(天然草球場)：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=3&fcid=6
+- 七人足球場(人造草球場)：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=3&fcid=7
+- 十一人足球場(天然草球場)：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=4&fcid=6
+- 十一人足球場(人造草球場)：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=4&fcid=7<br>
 
 足球場數據喺 `all_football_fields.js` 入面，係 GeoJSON `FeatureCollection` 格式，每個場地有：
 - 座標（經度、緯度）
