@@ -41,12 +41,10 @@ https://alexyip712.github.io/HK_football_field_map/
 - 真草七人：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=3&fcid=6
 - 人造草七人：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=3&fcid=7
 - 真草11人：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=4&fcid=6
-- 人造草11人：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=4&fcid=7
+- 人造草11人：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=4&fcid=7<br>
 足球場數據喺 `all_football_fields.js` 入面，係 GeoJSON `FeatureCollection` 格式，每個場地有：
 - 座標（經度、緯度）
 - 屬性：類別、名稱、地址、地區、開放時間、設施、電話、狀態同場地數量。
-
-請確保代碼同現有風格一致，仲要加啱註釋。
 
 ## 報告問題
 搵到數據錯漏或 Bug？用 App 底「報料」連結，或者喺 GitHub 開 Issue，講清楚問題。
@@ -55,6 +53,6 @@ https://alexyip712.github.io/HK_football_field_map/
 - MapLibre GL JS：開源地圖庫。
 - OpenStreetMap 貢獻者：提供地圖圖磚。
 - Noto Sans TC：支援中文渲染嘅字型。
-- 靈感來自：01泊車地圖。<a herf="https://github.com/hk01data/carpark">01泊車地圖</a>
+- 靈感來自：<a href="https://github.com/hk01data/carpark">01泊車地圖</a>。
 
 
