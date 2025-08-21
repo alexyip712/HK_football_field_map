@@ -34,7 +34,14 @@ This project is an interactive web application that maps football fields in Hong
 - **OpenStreetMap**: Provides the base map tiles.
 - **Font Awesome**: For icons in the UI.
 
-## Data Source
+## Data Source (Last update 18/08/2025) 
+- 5-a-side Football Pitches(Free Outdoor Pitches/Courts)：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=2&fcid=8
+- 7-a-side Football Pitches(Free Outdoor Pitches/Courts)：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=3&fcid=8
+- 7-a-side Football Pitches(Natural Turf Pitches)：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=3&fcid=6
+- 7-a-side Football Pitches(Artificial Turf Pitches)：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=3&fcid=7
+- 11-a-side Football Pitches(Natural Turf Pitches)：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=4&fcid=6
+- 11-a-side Football Pitches(Artificial Turf Pitches)：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=4&fcid=7<br>
+
 The football field data is stored in `all_football_fields.js` as a GeoJSON `FeatureCollection`. Each feature includes:
 - Coordinates (longitude, latitude)
 - Properties: category, name, address, district, opening hours, facilities, phone, status, and number of pitches.
