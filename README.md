@@ -42,6 +42,7 @@ https://alexyip712.github.io/HK_football_field_map/
 - 人造草七人：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=3&fcid=7
 - 真草11人：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=4&fcid=6
 - 人造草11人：https://www.lcsd.gov.hk/clpss/tc/webApp/Facility/Details.do?ftid=4&fcid=7<br>
+
 足球場數據喺 `all_football_fields.js` 入面，係 GeoJSON `FeatureCollection` 格式，每個場地有：
 - 座標（經度、緯度）
 - 屬性：類別、名稱、地址、地區、開放時間、設施、電話、狀態同場地數量。
