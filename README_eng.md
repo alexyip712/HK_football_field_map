@@ -53,4 +53,4 @@ Found a data error or bug? Use the "<a href="https://forms.gle/PCVTRoPjEFushPcN7
 - MapLibre GL JS for the open-source mapping library.
 - OpenStreetMap contributors for providing map tiles.
 - Noto Sans TC for supporting Chinese text rendering.
-- Inspired by: <a href="https://github.com/hk01data/carpark">01CarPark</a>。
+- Inspired by: <a href="https://github.com/hk01data/carpark">01CarPark</a>.
