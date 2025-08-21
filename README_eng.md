@@ -47,7 +47,7 @@ The football field data is stored in `all_football_fields.js` as a GeoJSON `Feat
 - Properties: category, name, address, district, opening hours, facilities, phone, status, and number of pitches.
 
 ## Reporting Issues
-Found a data error or bug? Use the "Report Issue" link in the application footer or create an issue on GitHub with details.
+Found a data error or bug? Use the "<a href="https://forms.gle/PCVTRoPjEFushPcN7">Report Issue</a>" link in the application footer or create an issue on GitHub with details.
 
 ## Acknowledgments
 - MapLibre GL JS for the open-source mapping library.
