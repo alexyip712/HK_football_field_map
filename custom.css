@@ -51,9 +51,9 @@ body {
     right: 40px;
     font-size: 1.2rem;
     line-height: 1;
-    padding: 8px;
+    padding: 10px;
     cursor: pointer;
-    color: #3498db;
+    color: #00000075;
     z-index: 10;
     transition: color 0.2s;
 }

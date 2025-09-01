@@ -240,7 +240,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     source: 'football-fields',
                     filter: ['==', 'cate', '七人天然草足球場'],
                     paint: {
-                        'circle-radius': 12,
+                        'circle-radius': [
+                            'interpolate',
+                            ['linear'],  // 線性插值
+                            ['zoom'],    // 基於當前縮放級別
+                            10, 5,       // 在 zoom 10 時，半徑 5 像素（小一點，避免低縮放時過密）
+                            15, 12,      // 在 zoom 15 時，半徑 12 像素（中間值）
+                            18, 18       // 在 zoom 18 時，半徑 20 像素（大一點，讓高縮放時易點擊）
+                            ],
                         'circle-color': '#fbff00ff',
                         'circle-opacity': 0.7,
                         'circle-stroke-color': '#838101ff',
@@ -254,7 +261,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     source: 'football-fields',
                     filter: ['==', 'cate', '七人人造草足球場'],
                     paint: {
-                        'circle-radius': 12,
+                        'circle-radius': [
+                            'interpolate',
+                            ['linear'],  // 線性插值
+                            ['zoom'],    // 基於當前縮放級別
+                            10, 5,       // 在 zoom 10 時，半徑 5 像素（小一點，避免低縮放時過密）
+                            15, 12,      // 在 zoom 15 時，半徑 12 像素（中間值）
+                            18, 18       // 在 zoom 18 時，半徑 20 像素（大一點，讓高縮放時易點擊）
+                            ],
                         'circle-color': '#32CD32',
                         'circle-opacity': 0.7,
                         'circle-stroke-color': '#228B22',
@@ -269,7 +283,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     source: 'football-fields',
                     filter: ['==', 'cate', '五人硬地足球場'],
                     paint: {
-                        'circle-radius': 12,
+                        'circle-radius': [
+                            'interpolate',
+                            ['linear'],  // 線性插值
+                            ['zoom'],    // 基於當前縮放級別
+                            10, 5,       // 在 zoom 10 時，半徑 5 像素（小一點，避免低縮放時過密）
+                            15, 12,      // 在 zoom 15 時，半徑 12 像素（中間值）
+                            18, 18       // 在 zoom 18 時，半徑 20 像素（大一點，讓高縮放時易點擊）
+                            ],
                         'circle-color': '#c93939ff',
                         'circle-opacity': 0.7,
                         'circle-stroke-color': '#c92d2dff',
@@ -283,7 +304,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     source: 'football-fields',
                     filter: ['==', 'cate', '七人硬地足球場'],
                     paint: {
-                        'circle-radius': 12,
+                        'circle-radius': [
+                            'interpolate',
+                            ['linear'],  // 線性插值
+                            ['zoom'],    // 基於當前縮放級別
+                            10, 5,       // 在 zoom 10 時，半徑 5 像素（小一點，避免低縮放時過密）
+                            15, 12,      // 在 zoom 15 時，半徑 12 像素（中間值）
+                            18, 18       // 在 zoom 18 時，半徑 20 像素（大一點，讓高縮放時易點擊）
+                            ],
                         'circle-color': '#509cf3ff',
                         'circle-opacity': 0.7,
                         'circle-stroke-color': '#3e74bbff',
@@ -297,7 +325,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     source: 'football-fields',
                     filter: ['==', 'cate', '十一人人造草足球場'],
                     paint: {
-                        'circle-radius': 12,
+                        'circle-radius': [
+                            'interpolate',
+                            ['linear'],  // 線性插值
+                            ['zoom'],    // 基於當前縮放級別
+                            10, 5,       // 在 zoom 10 時，半徑 5 像素（小一點，避免低縮放時過密）
+                            15, 12,      // 在 zoom 15 時，半徑 12 像素（中間值）
+                            18, 18       // 在 zoom 18 時，半徑 20 像素（大一點，讓高縮放時易點擊）
+                            ],
                         'circle-color': '#ffa735ff',
                         'circle-opacity': 0.7,
                         'circle-stroke-color': '#db5800ff',
@@ -311,7 +346,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     source: 'football-fields',
                     filter: ['==', 'cate', '十一人天然草足球場'],
                     paint: {
-                        'circle-radius': 12,
+                        'circle-radius': [
+                            'interpolate',
+                            ['linear'],  // 線性插值
+                            ['zoom'],    // 基於當前縮放級別
+                            10, 5,       // 在 zoom 10 時，半徑 5 像素（小一點，避免低縮放時過密）
+                            15, 12,      // 在 zoom 15 時，半徑 12 像素（中間值）
+                            18, 18       // 在 zoom 18 時，半徑 20 像素（大一點，讓高縮放時易點擊）
+                            ],
                         'circle-color': '#b03dd3ff',
                         'circle-opacity': 0.7,
                         'circle-stroke-color': '#672885ff',
