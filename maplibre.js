@@ -145,7 +145,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         map.on('load', () => {
+            
             try {
+                
                 map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-left');
 
                 class GeolocationControl {
@@ -178,6 +180,54 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
                 map.addControl(new GeolocationControl(), 'top-left');
+
+                // 動態生成 JSON-LD
+                const allFeatures = [
+                    five_a_side_list,
+                    seven_a_side_list,
+                    artificial_11_a_side_list,
+                    natural_11_a_side_list,
+                    natural_seven_a_side_list,
+                    artificial_seven_a_side_list
+                ]
+                    .filter(list => list && list.features) // 確保數據存在
+                    .reduce((acc, list) => acc.concat(list.features), [])
+                    .slice(80, 294); // 限制為20個地點，避免過長
+
+                const jsonLD = {
+                    "@context": "https://schema.org",
+                    "@type": "Map",
+                    "name": "香港足球場地圖",
+                    "url": window.location.href,
+                    "description": "互動地圖展示香港所有五人、七人及十一人足球場，包含地址、開放時間及設施資訊",
+                    "hasMap": allFeatures.map(feature => ({
+                        "@type": "Place",
+                        "name": feature.properties.name_chi,
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": feature.properties.address || "未提供",
+                            "addressLocality": feature.properties.district || "未提供",
+                            "addressCountry": "HK"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": feature.geometry.coordinates[1],
+                            "longitude": feature.geometry.coordinates[0]
+                        },
+                        "description": `${feature.properties.cate}，設施：${feature.properties.facilities || '未提供'}，開放時間：${feature.properties.opening_hours || '未提供'}`
+                    }))
+                };
+
+                // 注入 JSON-LD 到 <head>
+                try {
+                    const script = document.createElement('script');
+                    script.type = 'application/ld+json';
+                    script.textContent = JSON.stringify(jsonLD, null, 2);
+                    document.head.appendChild(script);
+                    console.log('JSON-LD 已成功注入:', jsonLD);
+                } catch (e) {
+                    console.error('JSON-LD 注入失敗:', e);
+                }
 
                 map.addSource('football-fields', {
                     type: 'geojson',
@@ -412,6 +462,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const layerControlDiv = document.createElement('div');
                 layerControlDiv.className = 'layer-control';
+                const toggleLayerContainer = document.createElement('div');
+                toggleLayerContainer.className = 'toggle-layer-container';
+                const toggleLayerTitle = document.createElement('span');
+                toggleLayerTitle.style.fontWeight = 'bold';
+                const toggleLayerIcon = document.createElement('span');
+                toggleLayerIcon.className = 'toggle-layer-icon';
+                toggleLayerIcon.innerHTML = '<i class="fa-solid fa-filter"></i>';
+                toggleLayerIcon.setAttribute('aria-label', '展開圖層控制');
+                toggleLayerContainer.appendChild(toggleLayerTitle);
+                toggleLayerContainer.appendChild(toggleLayerIcon);
+                layerControlDiv.appendChild(toggleLayerContainer);
+                const layerContent = document.createElement('div');
+                layerContent.className = 'layer-content';
                 for (const [label, { layerId, labelId, color }] of Object.entries(layerControl)) {
                     const div = document.createElement('div');
                     div.style.padding = '5px';
@@ -427,24 +490,31 @@ document.addEventListener('DOMContentLoaded', () => {
                     labelElem.htmlFor = `${layerId}-checkbox`;
                     const iconSpan = document.createElement('span');
                     iconSpan.textContent = color === 'blue' ? '🔵' :
-                                         color === 'green' ? '🔴' : 
-                                         color === 'turquoise' ? '🟠' : 
-                                         color === 'teal' ? '🟣' : 
-                                         color === 'darkgreen' ? '🟡' : '🟢';
+                                        color === 'green' ? '🔴' :
+                                        color === 'turquoise' ? '🟠' :
+                                        color === 'teal' ? '🟣' :
+                                        color === 'darkgreen' ? '🟡' : '🟢';
                     iconSpan.style.marginRight = '5px';
-                    iconSpan.setAttribute('aria-label', 
-                        color === 'blue' ? '藍色圓點表示七人硬地足球場' : 
-                        color === 'green' ? '綠色圓點表示五人硬地足球場' : 
-                        color === 'turquoise' ? '藍綠圓點表示十一人人造草足球場' : 
-                        color === 'teal' ? '深藍綠圓點表示十一人天然草足球場' : 
-                        color === 'darkgreen' ? '深綠圓點表示七人天然草足球場' : 
+                    iconSpan.setAttribute('aria-label',
+                        color === 'blue' ? '藍色圓點表示七人硬地足球場' :
+                        color === 'green' ? '綠色圓點表示五人硬地足球場' :
+                        color === 'turquoise' ? '藍綠圓點表示十一人人造草足球場' :
+                        color === 'teal' ? '深藍綠圓點表示十一人天然草足球場' :
+                        color === 'darkgreen' ? '深綠圓點表示七人天然草足球場' :
                         '淺綠圓點表示七人人造草足球場');
                     labelElem.appendChild(iconSpan);
                     labelElem.appendChild(document.createTextNode(label));
                     div.appendChild(checkbox);
                     div.appendChild(labelElem);
-                    layerControlDiv.appendChild(div);
+                    layerContent.appendChild(div);
                 }
+                layerControlDiv.appendChild(layerContent);
+
+                toggleLayerIcon.onclick = () => {
+                    const isCollapsed = layerControlDiv.classList.toggle('collapsed');
+                    toggleLayerIcon.innerHTML = isCollapsed ? '<i class="fa-solid fa-filter"></i>' : '<i class="fa fa-chevron-up"></i>';
+                    toggleLayerIcon.setAttribute('aria-label', isCollapsed ? '展開圖層控制' : '收起圖層控制');
+                };
 
                 const existingLayerControl = document.querySelector('.layer-control');
                 if (existingLayerControl) {
@@ -453,6 +523,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 if (window.innerWidth <= 835) {
                     document.getElementById('searchFilter').appendChild(layerControlDiv);
+                    layerControlDiv.classList.add('collapsed');
                     console.log('手機版：已附加 .layer-control 至 #searchFilter');
                 } else {
                     document.body.appendChild(layerControlDiv);
@@ -466,13 +537,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                     if (window.innerWidth <= 835) {
                         document.getElementById('searchFilter').appendChild(layerControlDiv);
+                        layerControlDiv.classList.add('collapsed');
                         console.log('視窗調整至手機版：已附加 .layer-control 至 #searchFilter');
                     } else {
                         document.body.appendChild(layerControlDiv);
+                        layerControlDiv.classList.remove('collapsed');
                         console.log('視窗調整至桌面版：已附加 .layer-control 至 body');
                     }
                 });
-
+                
                 searchInput.addEventListener('input', () => {
                     clearTimeout(debounceTimer);
                     debounceTimer = setTimeout(() => {
@@ -558,10 +631,51 @@ document.addEventListener('DOMContentLoaded', () => {
                 map.on('touchmove', () => {
                     clearTimeout(longPressTimer);
                 });
-            } catch (e) {
+                
+            } 
+            catch (e) {
                 console.error('地圖加載錯誤:', e);
                 const errorDiv = document.createElement('div');
             }
+
+        const allFeatures = five_a_side_list.features
+            .concat(artificial_11_a_side_list.features)
+            .concat(seven_a_side_list.features)
+            .concat(natural_11_a_side_list.features)
+            .concat(natural_seven_a_side_list.features)
+            .concat(artificial_seven_a_side_list.features)
+            .slice(0, 20); // 限制為 20 個地點以避免過長
+
+        const jsonLD = {
+            "@context": "https://schema.org",
+            "@type": "Map",
+            "name": "香港足球場地圖",
+            "url": window.location.href,
+            "description": "互動地圖展示香港所有五人、七人及十一人足球場，包含地址、開放時間及設施資訊",
+            "hasMap": allFeatures.map(feature => ({
+            "@type": "Place",
+            "name": feature.properties.name_chi,
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": feature.properties.address,
+                "addressLocality": feature.properties.district,
+                "addressCountry": "HK"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": feature.geometry.coordinates[1],
+                "longitude": feature.geometry.coordinates[0]
+            },
+            "description": `${feature.properties.cate}，設施：${feature.properties.facilities || '未提供'}，開放時間：${feature.properties.opening_hours || '未提供'}`
+            }))
+        };
+
+        // 將 JSON-LD 注入到 <head>
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = JSON.stringify(jsonLD);
+        document.head.appendChild(script);
+
         });
 
         map.on('error', (e) => {
@@ -575,12 +689,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js').then(() => {
+            navigator.serviceWorker.register('/HK_football_field_map/sw.js').then(() => {
                 console.log('Service Worker 註冊成功');
             }).catch(err => {
                 console.error('Service Worker 註冊失敗:', err);
             });
         }
+
     } catch (e) {
         console.error('初始化錯誤:', e);
         const errorDiv = document.createElement('div');
