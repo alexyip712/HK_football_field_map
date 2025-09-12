@@ -73,7 +73,7 @@ body {
     padding: 8px;
     cursor: pointer;
     color: #000000;
-    text-align: left;
+    text-align: center;
     transition: color 0.2s;
 }
 
@@ -173,8 +173,9 @@ body {
 
     }
     .layer-control.collapsed {
-        height: 8vw;
-        width: 8vw;
+        height: 35px; 
+        width: 35px; 
+        overflow: hidden;
     }
     
 }
@@ -240,7 +241,7 @@ body {
         
     }
     .layer-control.collapsed {
-        height: auto;
+        height: 40px;
     }
     .layer-control .toggle-layer-icon {
         display: none;
