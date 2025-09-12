@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 suggestions.style.display = 'none';
                 return;
             }
-            const filtered = filterData(searchTerm, '').features.slice(0, );
+            const filtered = filterData(searchTerm, '').features.slice(0,);
             if (filtered.length) {
                 filtered.forEach(f => {
                     const div = document.createElement('div');
@@ -320,132 +320,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         paint: layer.paint
                     });
 
-                    map.addLayer({
-                        id: 'seven-a-side-labels',
-                        type: 'symbol',
-                        source: 'football-fields',
-                        minzoom: 14,
-                        filter: ['==', 'cate', '七人硬地足球場'],
-                        layout: {
-                            'text-field': ['get', 'clean_name_chi'],
-                            'text-font': ['Noto Sans TC Bold'],
-                            'text-size': 12,
-                            'text-offset': [0, 1.5],
-                            'text-anchor': 'top',
-                            'text-allow-overlap': false
-                        },
-                        paint: {
-                            'text-color': '#143674ff',
-                            'text-halo-color': '#fff',
-                            'text-halo-width': 2.2
-                        }
-                    });
-
-                    map.addLayer({
-                        id: 'five-a-side-labels',
-                        type: 'symbol',
-                        source: 'football-fields',
-                        minzoom: 14,
-                        filter: ['==', 'cate', '五人硬地足球場'],
-                        layout: {
-                            'text-field': ['get', 'clean_name_chi'],
-                            'text-font': ['Noto Sans TC Bold'],
-                            'text-size': 12,
-                            'text-offset': [0, 1.5],
-                            'text-anchor': 'top',
-                            'text-allow-overlap': false
-                        },
-                        paint: {
-                            'text-color': '#6b0505ff',
-                            'text-halo-color': '#fff',
-                            'text-halo-width': 2.2
-                        }
-                    });
-
-                    map.addLayer({
-                        id: 'artificial-11-a-side-labels',
-                        type: 'symbol',
-                        source: 'football-fields',
-                        minzoom: 14,
-                        filter: ['==', 'cate', '十一人人造草足球場'],
-                        layout: {
-                            'text-field': ['get', 'clean_name_chi'],
-                            'text-font': ['Noto Sans TC Bold'],
-                            'text-size': 12,
-                            'text-offset': [0, 1.5],
-                            'text-anchor': 'top',
-                            'text-allow-overlap': false
-                        },
-                        paint: {
-                            'text-color': '#a84300ff',
-                            'text-halo-color': '#fff',
-                            'text-halo-width': 2.2
-                        }
-                    });
-
-                    map.addLayer({
-                        id: 'natural-11-a-side-labels',
-                        type: 'symbol',
-                        source: 'football-fields',
-                        minzoom: 14,
-                        filter: ['==', 'cate', '十一人天然草足球場'],
-                        layout: {
-                            'text-field': ['get', 'clean_name_chi'],
-                            'text-font': ['Noto Sans TC Bold'],
-                            'text-size': 12,
-                            'text-offset': [0, 1.5],
-                            'text-anchor': 'top',
-                            'text-allow-overlap': false
-                        },
-                        paint: {
-                            'text-color': '#3a0055ff',
-                            'text-halo-color': '#fff',
-                            'text-halo-width': 2.2
-                        }
-                    });
-
-                    map.addLayer({
-                        id: 'natural-seven-a-side-labels',
-                        type: 'symbol',
-                        source: 'football-fields',
-                        minzoom: 14,
-                        filter: ['==', 'cate', '七人天然草足球場'],
-                        layout: {
-                            'text-field': ['get', 'clean_name_chi'],
-                            'text-font': ['Noto Sans TC Bold'],
-                            'text-size': 12,
-                            'text-offset': [0, 1.5],
-                            'text-anchor': 'top',
-                            'text-allow-overlap': false
-                        },
-                        paint: {
-                            'text-color': '#fffd75ff',
-                            'text-halo-color': '#000000ff',
-                            'text-halo-width': 2
-                        }
-                    });
-
-                    map.addLayer({
-                        id: 'artificial-seven-a-side-labels',
-                        type: 'symbol',
-                        source: 'football-fields',
-                        minzoom: 14,
-                        filter: ['==', 'cate', '七人人造草足球場'],
-                        layout: {
-                            'text-field': ['get', 'clean_name_chi'],
-                            'text-font': ['Noto Sans TC Bold'],
-                            'text-size': 12,
-                            'text-offset': [0, 1.5],
-                            'text-anchor': 'top',
-                            'text-allow-overlap': false
-                        },
-                        paint: {
-                            'text-color': '#1B761B',
-                            'text-halo-color': '#fff',
-                            'text-halo-width': 2.2
-                        }
-                    });
-
                     map.on('click', layer.id, (e) => {
                         const features = map.queryRenderedFeatures(e.point, { layers: [layer.id] });
                         if (features.length) {
@@ -469,7 +343,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         e.preventDefault();
                         longPressTimer = setTimeout(() => {
                             if (currentPopup) currentPopup.remove();
-                            currentPopup = new maplibregl.Popup({ closeButton: false })
+                            current_popup = new maplibregl.Popup({ closeButton: false })
                                 .setLngLat(e.features[0].geometry.coordinates)
                                 .setHTML(`<span>${e.features[0].properties.clean_name_chi}</span>`)
                                 .addTo(map);
@@ -479,6 +353,133 @@ document.addEventListener('DOMContentLoaded', () => {
                     map.on('touchend', layer.id, () => {
                         clearTimeout(longPressTimer);
                     });
+                });
+
+                // 添加標籤層（移出迴圈，只添加一次）
+                map.addLayer({
+                    id: 'seven-a-side-labels',
+                    type: 'symbol',
+                    source: 'football-fields',
+                    minzoom: 14,
+                    filter: ['==', 'cate', '七人硬地足球場'],
+                    layout: {
+                        'text-field': ['get', 'clean_name_chi'],
+                        'text-font': ['Noto Sans TC Bold'],
+                        'text-size': 12,
+                        'text-offset': [0, 1.5],
+                        'text-anchor': 'top',
+                        'text-allow-overlap': false
+                    },
+                    paint: {
+                        'text-color': '#143674ff',
+                        'text-halo-color': '#fff',
+                        'text-halo-width': 2.2
+                    }
+                });
+
+                map.addLayer({
+                    id: 'five-a-side-labels',
+                    type: 'symbol',
+                    source: 'football-fields',
+                    minzoom: 14,
+                    filter: ['==', 'cate', '五人硬地足球場'],
+                    layout: {
+                        'text-field': ['get', 'clean_name_chi'],
+                        'text-font': ['Noto Sans TC Bold'],
+                        'text-size': 12,
+                        'text-offset': [0, 1.5],
+                        'text-anchor': 'top',
+                        'text-allow-overlap': false
+                    },
+                    paint: {
+                        'text-color': '#6b0505ff',
+                        'text-halo-color': '#fff',
+                        'text-halo-width': 2.2
+                    }
+                });
+
+                map.addLayer({
+                    id: 'artificial-11-a-side-labels',
+                    type: 'symbol',
+                    source: 'football-fields',
+                    minzoom: 14,
+                    filter: ['==', 'cate', '十一人人造草足球場'],
+                    layout: {
+                        'text-field': ['get', 'clean_name_chi'],
+                        'text-font': ['Noto Sans TC Bold'],
+                        'text-size': 12,
+                        'text-offset': [0, 1.5],
+                        'text-anchor': 'top',
+                        'text-allow-overlap': false
+                    },
+                    paint: {
+                        'text-color': '#a84300ff',
+                        'text-halo-color': '#fff',
+                        'text-halo-width': 2.2
+                    }
+                });
+
+                map.addLayer({
+                    id: 'natural-11-a-side-labels',
+                    type: 'symbol',
+                    source: 'football-fields',
+                    minzoom: 14,
+                    filter: ['==', 'cate', '十一人天然草足球場'],
+                    layout: {
+                        'text-field': ['get', 'clean_name_chi'],
+                        'text-font': ['Noto Sans TC Bold'],
+                        'text-size': 12,
+                        'text-offset': [0, 1.5],
+                        'text-anchor': 'top',
+                        'text-allow-overlap': false
+                    },
+                    paint: {
+                        'text-color': '#3a0055ff',
+                        'text-halo-color': '#fff',
+                        'text-halo-width': 2.2
+                    }
+                });
+
+                map.addLayer({
+                    id: 'natural-seven-a-side-labels',
+                    type: 'symbol',
+                    source: 'football-fields',
+                    minzoom: 14,
+                    filter: ['==', 'cate', '七人天然草足球場'],
+                    layout: {
+                        'text-field': ['get', 'clean_name_chi'],
+                        'text-font': ['Noto Sans TC Bold'],
+                        'text-size': 12,
+                        'text-offset': [0, 1.5],
+                        'text-anchor': 'top',
+                        'text-allow-overlap': false
+                    },
+                    paint: {
+                        'text-color': '#fffd75ff',
+                        'text-halo-color': '#000000ff',
+                        'text-halo-width': 2
+                    }
+                });
+
+                map.addLayer({
+                    id: 'artificial-seven-a-side-labels',
+                    type: 'symbol',
+                    source: 'football-fields',
+                    minzoom: 14,
+                    filter: ['==', 'cate', '七人人造草足球場'],
+                    layout: {
+                        'text-field': ['get', 'clean_name_chi'],
+                        'text-font': ['Noto Sans TC Bold'],
+                        'text-size': 12,
+                        'text-offset': [0, 1.5],
+                        'text-anchor': 'top',
+                        'text-allow-overlap': false
+                    },
+                    paint: {
+                        'text-color': '#1B761B',
+                        'text-halo-color': '#fff',
+                        'text-halo-width': 2.2
+                    }
                 });
 
                 map.on('touchmove', () => {
