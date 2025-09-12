@@ -2777,7 +2777,7 @@ var seven_a_side_list = {
             "properties": {
                 "cate": "七人硬地足球場",
                 "type": "七人硬地足球場",
-                "name_chi": "柴灣公園(一號足球場)",
+                "name_chi": "柴灣公園(二號足球場)",
                 "address": "柴灣翠灣街柴灣怡盛街 (一號足球場)柴灣翠灣街 (二號足球場)",
                 "district": "東區",
                 "icon": "small_blue",
@@ -2799,7 +2799,7 @@ var seven_a_side_list = {
             "properties": {
                 "cate": "七人硬地足球場",
                 "type": "七人硬地足球場",
-                "name_chi": "柴灣公園(二號足球場)",
+                "name_chi": "柴灣公園(一號足球場)",
                 "address": "柴灣翠灣街柴灣怡盛街 (一號足球場)柴灣翠灣街 (二號足球場)",
                 "district": "東區",
                 "icon": "small_blue",
