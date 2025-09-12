@@ -330,7 +330,7 @@ var five_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": []
+                "coordinates": [114.13216715146649, 22.356949996952032]
             },
             "properties": {
                 "cate": "五人硬地足球場",
@@ -827,9 +827,7 @@ var five_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    114.21503124174374,
-                    22.322830568862667
+                "coordinates": [114.2149714806758, 22.322992074131527
                 ]
             },
             "properties": {
@@ -1152,10 +1150,7 @@ var five_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    114.12805104665564,
-                    22.5037185476274
-                ]
+                "coordinates": [114.12822799625417, 22.503709464265178]
             },
             "properties": {
                 "cate": "五人硬地足球場",
@@ -2100,10 +2095,7 @@ var five_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    113.96988890940665,
-                    22.39741390169035
-                ]
+                "coordinates": [113.96993438543187, 22.397581906951146                ]
             },
             "properties": {
                 "cate": "五人硬地足球場",
@@ -2780,12 +2772,34 @@ var seven_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": []
+                "coordinates": [114.23842925413479, 22.268413672466355]
             },
             "properties": {
                 "cate": "七人硬地足球場",
                 "type": "七人硬地足球場",
-                "name_chi": "柴灣公園",
+                "name_chi": "柴灣公園(一號足球場)",
+                "address": "柴灣翠灣街柴灣怡盛街 (一號足球場)柴灣翠灣街 (二號足球場)",
+                "district": "東區",
+                "icon": "small_blue",
+                "icon_large": "large_blue",
+                "opening_hours": "上午7時至晚上11時",
+                "facilities": "洗手間、更衣室及飲水器。無障礙設施：暢通易達洗手間、觸覺引路帶、觸覺點字及觸覺平面圖。一號足球場：多用途球場 (1個五人足球場或1個七人足球場或1個手球場)",
+                "phone": "2898 7560(辦公時間)",
+                "status": "open",
+                "number": "2",
+                "other": "未提供"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.23911968905368, 22.264546292449314]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "柴灣公園(二號足球場)",
                 "address": "柴灣翠灣街柴灣怡盛街 (一號足球場)柴灣翠灣街 (二號足球場)",
                 "district": "東區",
                 "icon": "small_blue",
@@ -3752,10 +3766,7 @@ var seven_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    114.2150269648865,
-                    22.322826530637293
-                ]
+                "coordinates": [114.21505348105143, 22.322718407943093                ]
             },
             "properties": {
                 "cate": "七人硬地足球場",
@@ -4002,10 +4013,7 @@ var seven_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    114.12808205003907,
-                    22.503715643619216
-                ]
+                "coordinates": [114.1279498521007, 22.503728743745224                ]
             },
             "properties": {
                 "cate": "七人硬地足球場",
@@ -5025,10 +5033,7 @@ var seven_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    113.96988423781292,
-                    22.39741471184049
-                ]
+                "coordinates": [113.96984952344773, 22.397265937093664                ]
             },
             "properties": {
                 "cate": "七人硬地足球場",
@@ -5169,32 +5174,7 @@ var seven_a_side_list = {
                 "number": "1",
                 "other": "多用途球場(可作1個七人足球場 / 1個五人足球場 / 1個手球場使用)"
             }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    3,
-                    4
-                ]
-            },
-            "properties": {
-                "cate": "七人硬地足球場",
-                "type": "七人硬地足球場",
-                "name_chi": "東啟德遊樂場 (東啟德遊樂場於2022年5月31日起關閉)",
-                "address": "九龍新蒲崗六合街30號",
-                "district": "黃大仙區",
-                "icon": "small_blue",
-                "icon_large": "large_blue",
-                "opening_hours": "上午7時至晚上11時",
-                "facilities": "男、女更衣室及洗手間。飲水機。觀眾席。無障礙設施：暢通易達洗手間、觸覺引路帶。1個可容納10個車位的停車場 (設有1個 暢通易達停車位)",
-                "phone": "2326 9940(辦公時間)",
-                "status": "open",
-                "number": "1",
-                "other": "未提供"
-            }
-        },
+        },        
         {
             "type": "Feature",
             "geometry": {
