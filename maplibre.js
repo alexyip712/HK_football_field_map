@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 suggestions.style.display = 'none';
                 return;
             }
-            const filtered = filterData(searchTerm, '').features.slice(0,);
+            const filtered = filterData(searchTerm, '').features.slice(0, 10);
             if (filtered.length) {
                 filtered.forEach(f => {
                     const div = document.createElement('div');
@@ -311,6 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 ];
 
+                // 添加圓圈層
                 layers.forEach(layer => {
                     map.addLayer({
                         id: layer.id,
@@ -343,7 +344,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         e.preventDefault();
                         longPressTimer = setTimeout(() => {
                             if (currentPopup) currentPopup.remove();
-                            current_popup = new maplibregl.Popup({ closeButton: false })
+                            currentPopup = new maplibregl.Popup({ closeButton: false })
                                 .setLngLat(e.features[0].geometry.coordinates)
                                 .setHTML(`<span>${e.features[0].properties.clean_name_chi}</span>`)
                                 .addTo(map);
@@ -355,7 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                 });
 
-                // 添加標籤層（移出迴圈，只添加一次）
+                // 添加標籤層（只添加一次）
                 map.addLayer({
                     id: 'seven-a-side-labels',
                     type: 'symbol',
