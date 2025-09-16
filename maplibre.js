@@ -28,16 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
             maxBounds: [[113.75, 22.15], [114.481, 22.571]]
         });
 
-        // disable map rotation using right click + drag
-        map.dragRotate.disable();
-
-        // disable map rotation using keyboard
-        map.keyboard.disable();
-
-        // disable map rotation using touch rotation gesture
-        map.touchZoomRotate.disableRotation();
-
-
         const layerControl = {
             '五人硬地足球場': { layerId: 'five-a-side', labelId: 'five-a-side-labels', color: 'green' },
             '七人硬地足球場': { layerId: 'seven-a-side', labelId: 'seven-a-side-labels', color: 'blue' },
@@ -99,14 +89,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 closeButton.onclick = () => {
                     info.classList.add('card-hidden');
                     history.pushState({}, '', window.location.pathname);
+                    document.title = '香港足球場地圖'; // 重置標題
                 };
                 toggleIcon.onclick = () => {
                     const isExpanded = info.classList.toggle('expanded');
                     toggleIcon.innerHTML = isExpanded ? '<i class="fas fa-chevron-down"></i>' : '<i class="fas fa-chevron-up"></i>';
                     toggleIcon.setAttribute('aria-label', isExpanded ? '收起資訊卡' : '展開資訊卡');
                 };
+                // 動態更新 <title>
+                document.title = `${properties.clean_name_chi} | 香港足球場地圖`;
             } else {
                 info.classList.add('card-hidden');
+                document.title = '香港足球場地圖'; // 重置標題
             }
         }
 
@@ -147,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 suggestions.style.display = 'none';
                 return;
             }
-            const filtered = filterData(searchTerm, '').features.slice(0,);
+            const filtered = filterData(searchTerm, '').features.slice(0, 10);
             if (filtered.length) {
                 filtered.forEach(f => {
                     const div = document.createElement('div');
@@ -421,7 +415,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         'text-size': 12,
                         'text-offset': [0, 1.5],
                         'text-anchor': 'top',
-                        'text-allow-overlap': false
+                        'text-allow-overlap': true
                     },
                     paint: {
                         'text-color': '#a84300ff',
@@ -442,7 +436,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         'text-size': 12,
                         'text-offset': [0, 1.5],
                         'text-anchor': 'top',
-                        'text-allow-overlap': false
+                        'text-allow-overlap': true
                     },
                     paint: {
                         'text-color': '#3a0055ff',
@@ -463,7 +457,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         'text-size': 12,
                         'text-offset': [0, 1.5],
                         'text-anchor': 'top',
-                        'text-allow-overlap': false
+                        'text-allow-overlap': true
                     },
                     paint: {
                         'text-color': '#fffd75ff',
@@ -484,7 +478,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         'text-size': 12,
                         'text-offset': [0, 1.5],
                         'text-anchor': 'top',
-                        'text-allow-overlap': false
+                        'text-allow-overlap': true
                     },
                     paint: {
                         'text-color': '#1B761B',
@@ -508,8 +502,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         if (feature) {
                             map.flyTo({ center: feature.geometry.coordinates, zoom: 16.9, essential: true });
                             updateInfo(feature.properties);
+                        } else {
+                            document.title = '香港足球場地圖'; // 無效 URL，重置標題
                         }
+                    } else {
+                        document.title = '香港足球場地圖'; // 無效 URL，重置標題
                     }
+                } else {
+                    document.title = '香港足球場地圖'; // 默認標題
                 }
 
                 // Handle query changes (e.g., back/forward)
@@ -524,10 +524,15 @@ document.addEventListener('DOMContentLoaded', () => {
                             if (feature) {
                                 map.flyTo({ center: feature.geometry.coordinates, zoom: 16.9, essential: true });
                                 updateInfo(feature.properties);
+                            } else {
+                                document.title = '香港足球場地圖'; // 無效 URL，重置標題
                             }
+                        } else {
+                            document.title = '香港足球場地圖'; // 無效 URL，重置標題
                         }
                     } else {
                         info.classList.add('card-hidden');
+                        document.title = '香港足球場地圖'; // 重置標題
                     }
                 });
 
@@ -659,6 +664,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     history.pushState({}, '', window.location.pathname);
                     map.getSource('football-fields').setData(filterData('', ''));
                     map.flyTo({ center: [114.17475, 22.337533], zoom: 11, essential: true });
+                    document.title = '香港足球場地圖'; // 重置標題
                 });
 
                 map.on('zoomend', () => {

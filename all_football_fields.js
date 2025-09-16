@@ -2292,8 +2292,8 @@ var five_a_side_list = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    114.2006815228058,
-                    22.349576152398804
+                    114.2007815228058,
+                    22.349486152398804
                 ]
             },
             "properties": {
@@ -5205,8 +5205,8 @@ var seven_a_side_list = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    114.20068030766724,
-                    22.349593251671315
+                    114.20058030766724,
+                    22.349693251671315
                 ]
             },
             "properties": {
