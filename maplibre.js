@@ -28,6 +28,15 @@ document.addEventListener('DOMContentLoaded', () => {
             maxBounds: [[113.75, 22.15], [114.481, 22.571]]
         });
 
+        // disable map rotation using right click + drag
+        map.dragRotate.disable();
+
+        // disable map rotation using keyboard
+        map.keyboard.disable();
+
+        // disable map rotation using touch rotation gesture
+        map.touchZoomRotate.disableRotation();
+
         const layerControl = {
             '五人硬地足球場': { layerId: 'five-a-side', labelId: 'five-a-side-labels', color: 'green' },
             '七人硬地足球場': { layerId: 'seven-a-side', labelId: 'seven-a-side-labels', color: 'blue' },
