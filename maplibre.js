@@ -545,19 +545,47 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
 
+                // 自訂地區排序
+                const customOrder = [
+                    '中西區', '灣仔區', '東區', '南區',
+                    '油尖旺區', '深水埗區', '九龍城區', '黃大仙區', '觀塘區',
+                    '北區', '大埔區', '沙田區', '西貢區', '荃灣區', '屯門區', '元朗區', '葵青區', '離島區'
+                ];
                 const districts = [...new Set(seven_a_side_list.features
                     .concat(five_a_side_list.features)
                     .concat(artificial_11_a_side_list.features)
                     .concat(natural_11_a_side_list.features)
                     .concat(natural_seven_a_side_list.features)
                     .concat(artificial_seven_a_side_list.features)
-                    .map(f => f.properties.district))];
+                    .map(f => f.properties.district))]
+                    .sort((a, b) => {
+                        const indexA = customOrder.indexOf(a);
+                        const indexB = customOrder.indexOf(b);
+                        // 若地區不在 customOrder 中，放在末尾
+                        if (indexA === -1) return 1;
+                        if (indexB === -1) return -1;
+                        return indexA - indexB;
+                    });
+
+                // 添加預設選項
+                const defaultOption = document.createElement('option');
+                defaultOption.value = '';
+                defaultOption.textContent = '所有地區';
+                districtSelect.appendChild(defaultOption);
+
+                // 添加排序後的地區
                 districts.forEach(district => {
                     const option = document.createElement('option');
                     option.value = district;
                     option.textContent = district;
                     districtSelect.appendChild(option);
                 });
+
+                // 檢查未排序的地區
+                const missingDistricts = districts.filter(d => !customOrder.includes(d));
+                if (missingDistricts.length > 0) {
+                    console.warn('以下地區不在自訂排序列表中，已放末尾：', missingDistricts);
+                }
 
                 const layerControlDiv = document.createElement('div');
                 layerControlDiv.className = 'layer-control';
