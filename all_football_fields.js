@@ -2095,7 +2095,7 @@ var five_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [113.96993438543187, 22.397581906951146                ]
+                "coordinates": [113.96993438543187, 22.397581906951146]
             },
             "properties": {
                 "cate": "五人硬地足球場",
@@ -2566,7 +2566,7 @@ var five_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [114.25225372121794, 22.32582584511419                ]
+                "coordinates": [114.25225372121794, 22.32582584511419]
             },
             "properties": {
                 "cate": "五人硬地足球場",
@@ -2583,7 +2583,7 @@ var five_a_side_list = {
                 "number": "2",
                 "other": "非康文處球場"
             }
-        },        
+        },
         {
             "type": "Feature",
             "geometry": {
@@ -2615,7 +2615,7 @@ var five_a_side_list = {
             "properties": {
                 "cate": "五人硬地足球場",
                 "type": "五人硬地足球場",
-                "name_chi": "運頭塘邨五人足球場",
+                "name_chi": "運頭塘邨足球場",
                 "address": "大埔豐運路運頭塘邨",
                 "district": "大埔區",
                 "icon": "small_green",
@@ -2627,7 +2627,74 @@ var five_a_side_list = {
                 "number": "1",
                 "other": "非康文處球場"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.94154887507044, 22.284173946922603]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "安東街足球場",
+                "address": "大嶼山東涌安東街",
+                "district": "離島區",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.17314504619755, 22.44865744509546]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "廣福邨五人足球場",
+                "address": "大埔廣福邨",
+                "district": "大埔區",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.26620183712262, 22.29727213919637]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "賽馬會香港足球總會足球訓練中心五人硬地足球場",
+                "address": "將軍澳賽馬會香港足球總會足球訓練中心",
+                "district": "西貢區",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "上午8時半至晚上11時",
+                "facilities": "",
+                "phone": "2661 4211, WHATSAPP: 5957 4924",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。不能租用。網址: <a href='https://www.hkfa.com/football-training-centre'>https://www.hkfa.com/football-training-centre</a>"
+            }
         }
+
 
     ]
 };
@@ -3833,7 +3900,7 @@ var seven_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [114.21505348105143, 22.322718407943093                ]
+                "coordinates": [114.21505348105143, 22.322718407943093]
             },
             "properties": {
                 "cate": "七人硬地足球場",
@@ -4080,7 +4147,7 @@ var seven_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [114.1279498521007, 22.503728743745224                ]
+                "coordinates": [114.1279498521007, 22.503728743745224]
             },
             "properties": {
                 "cate": "七人硬地足球場",
@@ -5100,7 +5167,7 @@ var seven_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [113.96984952344773, 22.397265937093664                ]
+                "coordinates": [113.96984952344773, 22.397265937093664]
             },
             "properties": {
                 "cate": "七人硬地足球場",
@@ -5241,7 +5308,7 @@ var seven_a_side_list = {
                 "number": "1",
                 "other": "多用途球場(可作1個七人足球場 / 1個五人足球場 / 1個手球場使用)"
             }
-        },        
+        },
         {
             "type": "Feature",
             "geometry": {
@@ -5696,7 +5763,7 @@ var seven_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [113.99747023869102, 22.454520270625487                ]
+                "coordinates": [113.99747023869102, 22.454520270625487]
             },
             "properties": {
                 "cate": "七人硬地足球場",
@@ -5801,8 +5868,51 @@ var seven_a_side_list = {
                 "number": "1",
                 "other": "非康文處球場"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.19119145248285, 22.3861252146311]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "富善邨足球場",
+                "address": "大埔富善村",
+                "district": "大埔區",
+                "icon": "small_blue",
+                "icon_large": "large_blue",
+                "opening_hours": "未提供",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.1911800734447, 22.386133634629555]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "瀝源邨足球場",
+                "address": "沙田瀝源邨",
+                "district": "沙田區",
+                "icon": "small_blue",
+                "icon_large": "large_blue",
+                "opening_hours": "未提供",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場"
+            }
         }
-
     ]
 };
 
@@ -6876,6 +6986,50 @@ var natural_11_a_side_list = {
                 "number": "1",
                 "other": "每月場地保養日: 逢星期三 , 笫一及第三個星期四"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.26515126358936, 22.29934196261584]
+            },
+            "properties": {
+                "cate": "十一人天然草足球場",
+                "type": "十一人天然草足球場",
+                "name_chi": "賽馬會香港足球總會足球訓練中心(1, 2, 3號球場)",
+                "address": "將軍澳賽馬會香港足球總會足球訓練中心",
+                "district": "西貢區",
+                "icon": "small_teal",
+                "icon_large": "large_teal",
+                "opening_hours": "上午8時半至晚上11時",
+                "facilities": "",
+                "phone": "2661 4211, WHATSAPP: 5957 4924",
+                "status": "open",
+                "number": "3",
+                "other": "非康文處球場。不能租用。網址: <a href='https://www.hkfa.com/football-training-centre'>https://www.hkfa.com/football-training-centre</a>"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.19049401933837, 22.28046061779206]
+            },
+            "properties": {
+                "cate": "十一人天然草足球場",
+                "type": "十一人天然草足球場",
+                "name_chi": "銅鑼灣運動場",
+                "address": "銅鑼灣高士威道",
+                "district": "東區",
+                "icon": "small_teal",
+                "icon_large": "large_teal",
+                "opening_hours": "上午7時至晚上11時",
+                "facilities": "<ul><li>1組100米5線全天候人造跑道</li><li>1條400米1線全天候人造緩步徑</li><li>1個跳遠區</li><li>1個草地球場(95米x 64米)，只供團體及學校租用，以進行田徑、足球或欖球活動</li><li>6個網球場</li><li>2個網球練習場</li></ul>輔助設施：<br /><ul><li>更衣室連洗手間</li><li>3個3層高鋁合金看台，可容納72人</li><li>無障礙設施：暢通易達洗手間、觸覺引路帶</li></ul>",
+                "phone": "2890 5127",
+                "status": "open",
+                "number": "1",
+                "other": "草地球場只供團體及學校租用，以進行田徑、足球或欖球活動。逢星期四為草地球場保養日，草地球場暫停開放，其餘設施及訂場服務則不受影響。"
+            }
         }
     ]
 };
@@ -7178,7 +7332,7 @@ var artificial_11_a_side_list = {
             "properties": {
                 "cate": "十一人人造草足球場",
                 "type": "十一人人造草足球場",
-                "name_chi": "跑馬地遊樂場(2, 3, 4, 6號球場)",
+                "name_chi": "跑馬地遊樂場(1, 2, 3, 4號球場)",
                 "address": "香港跑馬地體育道",
                 "district": "灣仔區",
                 "icon": "small_turquoise",
@@ -7299,6 +7453,50 @@ var artificial_11_a_side_list = {
                 "status": "open",
                 "number": "1",
                 "other": "未提供"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.20660439371161, 22.388016227596918]
+            },
+            "properties": {
+                "cate": "十一人人造草足球場",
+                "type": "十一人人造草足球場",
+                "name_chi": "賽馬會傑志中心",
+                "address": "沙田石門安睦街23號",
+                "district": "沙田區",
+                "icon": "small_turquoise",
+                "icon_large": "large_turquoise",
+                "opening_hours": "上午8時半至晚上11時",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "2",
+                "other": "非康文處球場。可於每月1號至20號申請下月租用時段。網址: <a href='https://www.kitchee.com/jckc'>https://www.kitchee.com/jckc</a>"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.26801591644691, 22.297810580252207]
+            },
+            "properties": {
+                "cate": "十一人人造草足球場",
+                "type": "十一人人造草足球場",
+                "name_chi": "賽馬會香港足球總會足球訓練中心(4, 5, 6號球場)",
+                "address": "將軍澳賽馬會香港足球總會足球訓練中心",
+                "district": "西貢區",
+                "icon": "small_turquoise",
+                "icon_large": "large_turquoise",
+                "opening_hours": "上午8時半至晚上11時",
+                "facilities": "",
+                "phone": "2661 4211, WHATSAPP: 5957 4924",
+                "status": "open",
+                "number": "3",
+                "other": "非康文處球場。仿真草足球場（4至6號球場）可於2個月前提前訂用。網址: <a href='https://www.hkfa.com/football-training-centre'>https://www.hkfa.com/football-training-centre</a>"
             }
         }
     ]
