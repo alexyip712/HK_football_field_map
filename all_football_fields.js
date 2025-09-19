@@ -2561,7 +2561,74 @@ var five_a_side_list = {
                 "number": "1",
                 "other": "未提供"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.25225372121794, 22.32582584511419                ]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "寶林邨足球場",
+                "address": "將軍澳寶林邨",
+                "district": "西貢區",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "2",
+                "other": "非康文處球場"
+            }
+        },        
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.96140785458176, 22.376674969025043]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "蝴蝶邨五人足球場",
+                "address": "龍門路蝴蝶邨蝶舞樓",
+                "district": "屯門區",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "2",
+                "other": "非康文處球場"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.16620075571211, 22.44239050917437]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "運頭塘邨五人足球場",
+                "address": "大埔豐運路運頭塘邨",
+                "district": "大埔區",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場"
+            }
         }
+
     ]
 };
 
@@ -5624,7 +5691,118 @@ var seven_a_side_list = {
                 "number": "1",
                 "other": "未提供"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.99747023869102, 22.454520270625487                ]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "天瑞邨足球場",
+                "address": "天水圍天瑞路7號",
+                "district": "元朗區",
+                "icon": "small_blue",
+                "icon_large": "large_blue",
+                "opening_hours": "未提供",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.00553102640737, 22.45043699911299]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "天耀邨足球場",
+                "address": "天水圍天耀邨",
+                "district": "元朗區",
+                "icon": "small_blue",
+                "icon_large": "large_blue",
+                "opening_hours": "未提供",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.91938102612814, 22.2216920201602]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "水口足球場",
+                "address": "大嶼山嶼南路水口下橫壟",
+                "district": "離島區",
+                "icon": "small_blue",
+                "icon_large": "large_blue",
+                "opening_hours": "未提供",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.96556918843017, 22.376094731258263]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "湖景邨小型足球場",
+                "address": "屯門湖景邨",
+                "district": "屯門區",
+                "icon": "small_blue",
+                "icon_large": "large_blue",
+                "opening_hours": "未提供",
+                "facilities": "",
+                "phone": "2465 0621",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.17698129041774, 22.453894656711128]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "富善邨足球場",
+                "address": "大埔富善村",
+                "district": "大埔區",
+                "icon": "small_blue",
+                "icon_large": "large_blue",
+                "opening_hours": "未提供",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場"
+            }
         }
+
     ]
 };
 
