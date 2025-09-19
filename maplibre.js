@@ -568,10 +568,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
 
                 // 添加預設選項
-                const defaultOption = document.createElement('option');
-                defaultOption.value = '';
-                defaultOption.textContent = '所有地區';
-                districtSelect.appendChild(defaultOption);
+                //const defaultOption = document.createElement('option');
+                //defaultOption.value = '';
+                //defaultOption.textContent = '所有地區';
+                //districtSelect.appendChild(defaultOption);
 
                 // 添加排序後的地區
                 districts.forEach(district => {
