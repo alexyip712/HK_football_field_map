@@ -2715,9 +2715,29 @@ var five_a_side_list = {
                 "number": "1",
                 "other": "網址: <a href='https://www.kaitaksportspark.com.hk/facilitiesBookingDetail?id=2025050900000243'>https://www.kaitaksportspark.com.hk/facilitiesBookingDetail?id=2025050900000243</a>"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.24841410245602, 22.260856133284733]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "小西灣邨足球場",
+                "address": "小西灣曉翠街小西灣邨",
+                "district": "東區",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。"
+            }
         }
-
-
     ]
 };
 
@@ -5955,6 +5975,28 @@ var seven_a_side_list = {
                 "status": "open",
                 "number": "1",
                 "other": "非康文處球場。須為九龍華仁書院校友或會員，可當月及下月預訂。網址: <a href='https://wyk.edu.hk/sports-venue-reservation/'>https://wyk.edu.hk/sports-venue-reservation/</a>"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.2312869297976, 22.41995900365785]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "耀安邨足球場",
+                "address": "馬鞍山耀安邨",
+                "district": "沙田區",
+                "icon": "small_blue",
+                "icon_large": "large_blue",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。"
             }
         }
     ]
