@@ -420,3 +420,27 @@ body {
     padding: 5px 10px;
     border-radius: 4px;
 }
+
+.clear-input {
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+    font-size: 17px;
+    line-height: 0;
+    padding: 5px;
+    z-index: 1;
+    text-align: center;
+
+}
+
+.clear-input:hover {
+    color: #ff0000;
+}
+
+.clear-input:focus {
+    outline: 2px solid #509cf3;
+    outline-offset: 2px;
+}

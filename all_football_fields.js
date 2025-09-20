@@ -2693,6 +2693,28 @@ var five_a_side_list = {
                 "number": "1",
                 "other": "非康文處球場。不能租用。網址: <a href='https://www.hkfa.com/football-training-centre'>https://www.hkfa.com/football-training-centre</a>"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.19769684496872, 22.32563856880339]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "啟德承啟道38號北斗園",
+                "address": "啟德北斗園",
+                "district": "九龍城區",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "上午7時至晚上11時",
+                "facilities": "有蓋硬地球場",
+                "phone": "3711 5050, 6996 9525",
+                "status": "open",
+                "number": "1",
+                "other": "網址: <a href='https://www.kaitaksportspark.com.hk/facilitiesBookingDetail?id=2025050900000243'>https://www.kaitaksportspark.com.hk/facilitiesBookingDetail?id=2025050900000243</a>"
+            }
         }
 
 
@@ -5912,6 +5934,28 @@ var seven_a_side_list = {
                 "number": "1",
                 "other": "非康文處球場"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.17431092251306, 22.31505651968191]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "九龍華仁書院足球場",
+                "address": "油麻地窩打老道56號",
+                "district": "油尖旺區",
+                "icon": "small_blue",
+                "icon_large": "large_blue",
+                "opening_hours": "平日：下午1點至下午5點30分<br>星期六及公眾假期：上午8點至下午5點30分",
+                "facilities": "",
+                "phone": "2384 1038",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。須為九龍華仁書院校友或會員，可當月及下月預訂。網址: <a href='https://wyk.edu.hk/sports-venue-reservation/'>https://wyk.edu.hk/sports-venue-reservation/</a>"
+            }
         }
     ]
 };
@@ -7030,6 +7074,72 @@ var natural_11_a_side_list = {
                 "number": "1",
                 "other": "草地球場只供團體及學校租用，以進行田徑、足球或欖球活動。逢星期四為草地球場保養日，草地球場暫停開放，其餘設施及訂場服務則不受影響。"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.17292993032478, 22.326096384414342]
+            },
+            "properties": {
+                "cate": "十一人天然草足球場",
+                "type": "十一人天然草足球場",
+                "name_chi": "旺角大球場",
+                "address": "旺角花墟道37號",
+                "district": "油尖旺區",
+                "icon": "small_teal",
+                "icon_large": "large_teal",
+                "opening_hours": "<a href ='https://www.lcsd.gov.hk/tc/stadium/mks/event.html'>每月節目表</a>",
+                "facilities": "<ul><li>符合國際標準的草地球場並附設照明系統</li><li>電子計分顯示屏幕</li><li>可容納六千六百位觀眾座位</li><li>一百二十七位貴賓席座位</li><li>三十九個輪椅位</li><li>四間運動員更衣室</li><li>兩間裁判員更衣室</li><li>一間貴賓室</li><li>一間多用途室</li><li>一間會議室</li><li>一間傳媒中心</li><li>一間救護室</li><li>一間藥檢室</li><li>兩間節目控制室</li><li>一間電子計分顯示屏控制室</li><li>八個售票處</li><li>一間小食亭</li><li>一間育嬰間</li><li>公眾人士及暢通易達洗手間</li><li>二十個車位停車場（十六個車位供私家車、一個供殘疾人士、兩個供旅遊巴及一個供電單車使用",
+                "phone": "2380 0188(辦公時間)",
+                "status": "open",
+                "number": "1",
+                "other": "草地球場只供團體租用。一般收費：1天或以下，收入總額的20%，但最低收費為2,200元"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.18859583942005, 22.27292316465724]
+            },
+            "properties": {
+                "cate": "十一人天然草足球場",
+                "type": "十一人天然草足球場",
+                "name_chi": "香港大球場",
+                "address": "香港掃桿埔東院道55號",
+                "district": "灣仔區",
+                "icon": "small_teal",
+                "icon_large": "large_teal",
+                "opening_hours": "<a href ='https://www.lcsd.gov.hk/tc/stadium/hks/events.html'>每月節目表</a>",
+                "facilities": "草地球場、40,000個座位、飲食設施，38個洗手間，50間廂房",
+                "phone": "2380 0188(辦公時間)",
+                "status": "open",
+                "number": "1",
+                "other": "草地球場只供團體租用。基本收費：每天150,000元或門票收入總額的20%(以款額較大者為準)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.19725451052945, 22.32250931279437]
+            },
+            "properties": {
+                "cate": "十一人天然草足球場",
+                "type": "十一人天然草足球場",
+                "name_chi": "啟德主場館",
+                "address": "啟德承啟道38號",
+                "district": "九龍城區",
+                "icon": "small_teal",
+                "icon_large": "large_teal",
+                "opening_hours": "<a href ='https://www.kaitaksportspark.com.hk/eventsTickets'>活動及門票</a>",
+                "facilities": "草地球場、可容納50,000人、開合式天幕",
+                "phone": "3711 5050",
+                "status": "open",
+                "number": "1",
+                "other": "網站：<a href ='https://www.kaitaksportspark.com.hk/landing'>https://www.kaitaksportspark.com.hk/landing</a>"
+            }
         }
     ]
 };
@@ -7493,10 +7603,76 @@ var artificial_11_a_side_list = {
                 "icon_large": "large_turquoise",
                 "opening_hours": "上午8時半至晚上11時",
                 "facilities": "",
-                "phone": "2661 4211, WHATSAPP: 5957 4924",
+                "phone": "2661 4211, WHATSAPP：5957 4924",
                 "status": "open",
                 "number": "3",
                 "other": "非康文處球場。仿真草足球場（4至6號球場）可於2個月前提前訂用。網址: <a href='https://www.hkfa.com/football-training-centre'>https://www.hkfa.com/football-training-centre</a>"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.17793312473759, 22.308993508540535]
+            },
+            "properties": {
+                "cate": "十一人人造草足球場",
+                "type": "十一人人造草足球場",
+                "name_chi": "京士柏運動場",
+                "address": "京士柏衛理徑11號",
+                "district": "油尖旺區",
+                "icon": "small_turquoise",
+                "icon_large": "large_turquoise",
+                "opening_hours": "上午9時至晚上10時半",
+                "facilities": "",
+                "phone": "2332 7112",
+                "status": "open",
+                "number": "3",
+                "other": "非康文處球場。可提前一個月填寫申請表預訂。網址: <a href='https://www.kingspark.com.hk/price-list'>https://www.kingspark.com.hk/price-list</a>"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.17431092251306, 22.31505651968191]
+            },
+            "properties": {
+                "cate": "十一人人造草足球場",
+                "type": "十一人人造草足球場",
+                "name_chi": "九龍華仁書院足球場",
+                "address": "油麻地窩打老道56號",
+                "district": "油尖旺區",
+                "icon": "small_turquoise",
+                "icon_large": "large_turquoise",
+                "opening_hours": "平日：下午1時至下午5時半<br>星期六及公眾假期：上午8時至下午5點半",
+                "facilities": "",
+                "phone": "2384 1038",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。須為九龍華仁書院校友或會員，可當月及下月預訂。網址: <a href='https://wyk.edu.hk/artificial-grass-football-pitch-booking/'>https://wyk.edu.hk/artificial-grass-football-pitch-booking/</a>"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.19484637384608, 22.324286740691925]
+            },
+            "properties": {
+                "cate": "十一人人造草足球場",
+                "type": "十一人人造草足球場",
+                "name_chi": "啟德青年運動場",
+                "address": "啟德承啟道38號",
+                "district": "九龍城區",
+                "icon": "small_turquoise",
+                "icon_large": "large_turquoise",
+                "opening_hours": "上午7時至晚上11時",
+                "facilities": "可容納5,000名觀眾",
+                "phone": "3711 5050",
+                "status": "open",
+                "number": "1",
+                "other": "港幣 $1,800/ 一小時三十分鐘。每個會員帳戶最多預訂每日一個段節。網址: <a href='https://www.kaitaksportspark.com.hk/facilitiesBookingDetail?id=2024061400000146'>https://www.kaitaksportspark.com.hk/facilitiesBookingDetail?id=2024061400000146</a>"
             }
         }
     ]

@@ -208,6 +208,35 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 map.addControl(new GeolocationControl(), 'top-left');
 
+                // 清除按鈕
+                const searchContainer = searchInput.parentElement;
+                const clearInput = document.createElement('span');
+                clearInput.className = 'clear-input';
+                clearInput.textContent = '×';
+                clearInput.setAttribute('aria-label', '清除搜索');
+                clearInput.setAttribute('tabindex', '0');
+                clearInput.style.display = 'none';
+                searchContainer.style.position = 'relative';
+                searchContainer.appendChild(clearInput);
+
+                searchInput.addEventListener('input', () => {
+                    clearInput.style.display = searchInput.value.length > 0 ? 'block' : 'none';
+                });
+
+                clearInput.addEventListener('click', () => {
+                    searchInput.value = '';
+                    clearInput.style.display = 'none';
+                    const data = filterData('', districtSelect.value);
+                    map.getSource('football-fields').setData(data);
+                    updateSuggestions('');
+                });
+
+                clearInput.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        clearInput.click();
+                    }
+                });
+
                 // 動態生成 JSON-LD
                 const allFeatures = [
                     five_a_side_list,
