@@ -6428,6 +6428,28 @@ var artificial_seven_a_side_list = {
                 "number": "1",
                 "other": "未提供"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.2648389616744, 22.42863681516107]
+            },
+            "properties": {
+                "cate": "七人人造草足球場",
+                "type": "七人人造草足球場",
+                "name_chi": "GO PARK Sports 足球場",
+                "address": "馬鞍山西沙海映路9號",
+                "district": "沙田區",
+                "icon": "small_limegreen",
+                "icon_large": "small_limegreen",
+                "opening_hours": "上午8時至晚上10時",
+                "facilities": "可劃分為一個欖球場或一個11人足球場。可容納500名觀眾、場邊設附有帳篷的座位",
+                "phone": "6627 1606",
+                "status": "open",
+                "number": "2",
+                "other": "收費：$440-600/ 一小時。網址: <a href='https://www.goparksaisha.hk/tc/sport/football/'>https://www.goparksaisha.hk/tc/sport/football/</a>"
+            }
         }
     ]
 };
@@ -7715,6 +7737,28 @@ var artificial_11_a_side_list = {
                 "status": "open",
                 "number": "1",
                 "other": "港幣 $1,800/ 一小時三十分鐘。每個會員帳戶最多預訂每日一個段節。網址: <a href='https://www.kaitaksportspark.com.hk/facilitiesBookingDetail?id=2024061400000146'>https://www.kaitaksportspark.com.hk/facilitiesBookingDetail?id=2024061400000146</a>"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.2648389616744, 22.429134706053397]
+            },
+            "properties": {
+                "cate": "十一人人造草足球場",
+                "type": "十一人人造草足球場",
+                "name_chi": "GO PARK Sports 足球場",
+                "address": "馬鞍山西沙海映路9號",
+                "district": "沙田區",
+                "icon": "small_turquoise",
+                "icon_large": "large_turquoise",
+                "opening_hours": "上午8時至晚上10時",
+                "facilities": "可劃分為一個欖球場或兩個7人足球場。可容納500名觀眾、場邊設附有帳篷的座位",
+                "phone": "6627 1606",
+                "status": "open",
+                "number": "1",
+                "other": "收費：$440-600/ 一小時。網址: <a href='https://www.goparksaisha.hk/tc/sport/football/'>https://www.goparksaisha.hk/tc/sport/football/</a>"
             }
         }
     ]
