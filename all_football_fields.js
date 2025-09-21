@@ -1543,10 +1543,7 @@ var five_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    22.369629629363978,
-                    114.17976294980637
-                ]
+                "coordinates": [114.17976542479066, 22.36963248823033]
             },
             "properties": {
                 "cate": "五人硬地足球場",
@@ -2725,6 +2722,72 @@ var five_a_side_list = {
                 "name_chi": "小西灣邨足球場",
                 "address": "小西灣曉翠街小西灣邨",
                 "district": "東區",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.17260976050129, 22.46065706369383]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "富亨邨足球場",
+                "address": "新界大埔富亨邨頌雅路6號",
+                "district": "大埔區",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.15931646246503, 22.45091975297603]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "寶雅苑足球場",
+                "address": "大埔寶雅苑太和路2號",
+                "district": "大埔區",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.16210959247353, 22.450401661175768]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "太和邨足球場",
+                "address": "大埔太和邨太和路12號",
+                "district": "大埔區",
                 "icon": "small_green",
                 "icon_large": "large_green",
                 "opening_hours": "",
@@ -5912,28 +5975,6 @@ var seven_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [114.19119145248285, 22.3861252146311]
-            },
-            "properties": {
-                "cate": "七人硬地足球場",
-                "type": "七人硬地足球場",
-                "name_chi": "富善邨足球場",
-                "address": "大埔富善村",
-                "district": "大埔區",
-                "icon": "small_blue",
-                "icon_large": "large_blue",
-                "opening_hours": "未提供",
-                "facilities": "",
-                "phone": "",
-                "status": "open",
-                "number": "1",
-                "other": "非康文處球場"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
                 "coordinates": [114.1911800734447, 22.386133634629555]
             },
             "properties": {
@@ -5985,6 +6026,28 @@ var seven_a_side_list = {
                 "type": "七人硬地足球場",
                 "name_chi": "耀安邨足球場",
                 "address": "馬鞍山耀安邨",
+                "district": "沙田區",
+                "icon": "small_blue",
+                "icon_large": "large_blue",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.18137745513938, 22.371606708643373]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "新翠邨足球場",
+                "address": "大圍新翠邨",
                 "district": "沙田區",
                 "icon": "small_blue",
                 "icon_large": "large_blue",
