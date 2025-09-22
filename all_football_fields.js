@@ -302,10 +302,7 @@ var five_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    22.315207090767892,
-                    114.19132227080704
-                ]
+                "coordinates": [114.19143497865518, 22.315330813185188]
             },
             "properties": {
                 "cate": "五人硬地足球場",
@@ -7822,4 +7819,5 @@ var artificial_11_a_side_list = {
             }
         }
     ]
+
 };
