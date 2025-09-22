@@ -2694,8 +2694,8 @@ var five_a_side_list = {
             "properties": {
                 "cate": "五人硬地足球場",
                 "type": "五人硬地足球場",
-                "name_chi": "啟德承啟道38號北斗園",
-                "address": "啟德北斗園",
+                "name_chi": "啟德北斗園足球場",
+                "address": "啟德承啟道38號北斗園",
                 "district": "九龍城區",
                 "icon": "small_green",
                 "icon_large": "large_green",
@@ -7821,3 +7821,4 @@ var artificial_11_a_side_list = {
     ]
 
 };
+
