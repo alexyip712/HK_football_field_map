@@ -2838,6 +2838,72 @@ var five_a_side_list = {
                 "number": "1",
                 "other": "預約須為香港中文大學學生、校友或會員。網站：<a href ='https://www.peu.cuhk.edu.hk/zh-tw/'  target='_blank'>中文大學體育部</a>"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.23891125045601, 22.306867035577334]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "德田邨足球場",
+                "address": "觀塘藍田德田邨碧雲道",
+                "district": "觀塘區",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.23489763854397, 22.312627380719746]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "翠屏南邨足球場",
+                "address": "觀塘藍田翠屏南邨翠屏道",
+                "district": "觀塘區",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "2",
+                "other": "非康文處球場。"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.17870539574444, 22.365754844195667]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "隆亨邨足球場",
+                "address": "大圍隆亨邨",
+                "district": "沙田區",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。又名隆亨後山足球場、賞心石地足球場。"
+            }
         }
     ]
 };
@@ -6209,8 +6275,73 @@ var seven_a_side_list = {
                 "number": "1",
                 "other": "非康文處球場。須為九龍華仁書院校友或會員，可當月及下月預訂。網站: <a href='https://wyk.edu.hk/sports-venue-reservation/' target='_blank'>預訂網站</a>"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.14074149637015, 22.249128322958708]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "田灣海傍道足球場",
+                "address": "雞籠灣田灣海傍道33號",
+                "district": "南區",
+                "icon": "small_turquoise",
+                "icon_large": "large_turquoise",
+                "opening_hours": "上午8時至下午10時",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.10621885538647, 22.35313530129178]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "青衣體育會足球場",
+                "address": "青衣青綠街38號",
+                "district": "葵青區",
+                "icon": "small_turquoise",
+                "icon_large": "large_turquoise",
+                "opening_hours": "上午7時至下午9時",
+                "facilities": "",
+                "phone": "9608 4656",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.1254479730501, 22.366600222249733]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "大窩口邨第七號遊樂場",
+                "address": "大窩口大窩口邨大窩口道",
+                "district": "葵青區",
+                "icon": "small_turquoise",
+                "icon_large": "large_turquoise",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。"
+            }
         }
-
     ]
 };
 
