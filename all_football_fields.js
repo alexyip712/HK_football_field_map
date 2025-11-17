@@ -2926,6 +2926,28 @@ var five_a_side_list = {
                 "number": "1",
                 "other": "非康文處球場。"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.96822253768514, 22.40407456140502]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "良才里遊樂場",
+                "address": "屯門良才里",
+                "district": "屯門區",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "",
+                "facilities": "多用途硬地球場（可作一個七人足球場或兩個五人足球場或兩個手球場）、有蓋看台、健身設施及園景等設施。",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": ""
+            }
         }
     ]
 };
@@ -6363,6 +6385,28 @@ var seven_a_side_list = {
                 "number": "1",
                 "other": "非康文處球場。"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.9684183389427, 22.403868741756543]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "良才里遊樂場",
+                "address": "屯門良才里",
+                "district": "屯門區",
+                "icon": "small_turquoise",
+                "icon_large": "large_turquoise",
+                "opening_hours": "",
+                "facilities": "多用途硬地球場（可作一個七人足球場或兩個五人足球場或兩個手球場）、有蓋看台、健身設施及園景等設施。",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": ""
+            }
         }
     ]
 };
@@ -7761,7 +7805,7 @@ var natural_11_a_side_list = {
                 "icon": "small_teal",
                 "icon_large": "large_teal",
                 "opening_hours": "<a href ='https://www.wingyeefootball.com/%E5%A0%B4%E5%9C%B0%E9%A0%90%E8%A8%82'  target='_blank'>可供申請時段</a>",
-                "facilities": "提供更衣地方，不設淋浴",
+                "facilities": "提供更衣地方，不設淋浴間。",
                 "phone": "",
                 "status": "open",
                 "number": "1",
