@@ -2794,6 +2794,28 @@ var five_a_side_list = {
                 "number": "1",
                 "other": "非康文處球場。"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.96183066490264, 22.404704266775862]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "良景邨五人硬地足球場",
+                "address": "屯門良景邨",
+                "district": "屯門區",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。"
+            }
         }
     ]
 };
@@ -6055,6 +6077,72 @@ var seven_a_side_list = {
                 "number": "1",
                 "other": "非康文處球場。"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.96108602512383, 22.403020119975682]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "良景大球場",
+                "address": "屯門良景邨",
+                "district": "屯門區",
+                "icon": "small_blue",
+                "icon_large": "large_blue",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.9787496447393, 22.41479547777064]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "兆康苑七人硬地足球場",
+                "address": "屯門兆康苑兆康路2號",
+                "district": "屯門區",
+                "icon": "small_blue",
+                "icon_large": "large_blue",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.97317533474617, 22.38600512151565]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "友愛硬地足球場",
+                "address": "屯門友愛邨",
+                "district": "屯門區",
+                "icon": "small_blue",
+                "icon_large": "large_blue",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。"
+            }
         }
     ]
 };
@@ -7819,6 +7907,4 @@ var artificial_11_a_side_list = {
             }
         }
     ]
-
 };
-
