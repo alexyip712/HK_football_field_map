@@ -2904,6 +2904,28 @@ var five_a_side_list = {
                 "number": "1",
                 "other": "非康文處球場。又名隆亨後山足球場、賞心石地足球場。"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.20924096030357, 22.385587944482698]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "碩門邨足球場",
+                "address": "沙田碩門邨",
+                "district": "沙田區",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。"
+            }
         }
     ]
 };
@@ -7723,6 +7745,28 @@ var natural_11_a_side_list = {
                 "number": "1",
                 "other": "預約須為城市大學、理工大學和浸會大學學生、校友或會員。網站：<a href ='https://jsc.hkbu.edu.hk/facilitycharge_ch.html'  target='_blank'>聯校運動中心網站</a>"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.2125442612466, 22.337033488089354]
+            },
+            "properties": {
+                "cate": "十一人天然草足球場",
+                "type": "十一人天然草足球場",
+                "name_chi": "永義足球中心",
+                "address": "斧山平定道東",
+                "district": "黃大仙區",
+                "icon": "small_teal",
+                "icon_large": "large_teal",
+                "opening_hours": "<a href ='https://www.wingyeefootball.com/%E5%A0%B4%E5%9C%B0%E9%A0%90%E8%A8%82'  target='_blank'>可供申請時段</a>",
+                "facilities": "提供更衣地方，不設淋浴",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "每節90分鐘，費用$168。網站：<a href ='https://www.wingyeefootball.com/%E5%A0%B4%E5%9C%B0%E9%A0%90%E8%A8%82'  target='_blank'>永義足球中心網站</a><br>球場位於水務處範圍，非授權車輛不淮駛入，車輛只可駛到閘口及掉頭離開，附近牛池灣公園停車場或彩雲商場可以泊車，再步行10分鐘到達。"
+            }
         }
     ]
 };
@@ -8366,6 +8410,28 @@ var artificial_11_a_side_list = {
                 "status": "open",
                 "number": "1",
                 "other": "預約須為嶺南大學學生、校友或會員。網站：<a href ='https://www.ln.edu.hk/cht/ocdm/facilities/sports'  target='_blank'>嶺南大學網站</a>"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.18872781146362, 22.344218255537008]
+            },
+            "properties": {
+                "cate": "十一人人造草足球場",
+                "type": "十一人人造草足球場",
+                "name_chi": "馬仔坑遊樂場",
+                "address": "馬仔坑道30號",
+                "district": "黃大仙區",
+                "icon": "small_turquoise",
+                "icon_large": "large_turquoise",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": ""
             }
         }
     ]
