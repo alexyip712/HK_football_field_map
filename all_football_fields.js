@@ -2682,7 +2682,7 @@ var five_a_side_list = {
                 "phone": "2661 4211, WHATSAPP: 5957 4924",
                 "status": "open",
                 "number": "1",
-                "other": "非康文處球場。不能租用。網址: <a href='https://www.hkfa.com/football-training-centre' target='_blank'>足球訓練中心網址</a>"
+                "other": "非康文處球場。不能租用。網站: <a href='https://www.hkfa.com/football-training-centre' target='_blank'>足球訓練中心網站</a>"
             }
         },
         {
@@ -2704,7 +2704,7 @@ var five_a_side_list = {
                 "phone": "3711 5050, 6996 9525",
                 "status": "open",
                 "number": "1",
-                "other": "網址: <a href='https://www.kaitaksportspark.com.hk/facilitiesBookingDetail?id=2025050900000243' target='_blank'>預訂網址</a>"
+                "other": "網站: <a href='https://www.kaitaksportspark.com.hk/facilitiesBookingDetail?id=2025050900000243' target='_blank'>預訂網站</a>"
             }
         },
         {
@@ -2804,7 +2804,7 @@ var five_a_side_list = {
             "properties": {
                 "cate": "五人硬地足球場",
                 "type": "五人硬地足球場",
-                "name_chi": "良景邨五人硬地足球場",
+                "name_chi": "良景邨足球場",
                 "address": "屯門良景邨",
                 "district": "屯門區",
                 "icon": "small_green",
@@ -2815,6 +2815,28 @@ var five_a_side_list = {
                 "status": "open",
                 "number": "1",
                 "other": "非康文處球場。"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.2093913555083, 22.415538973152874]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "嶺南五人足球場",
+                "address": "沙田馬料水香港中文大學嶺南運動場",
+                "district": "沙田",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "<a href ='https://www.peu.cuhk.edu.hk/zh-tw/facilities/opening-hours' target='_blank'>場地開放時間表</a>",
+                "facilities": "裝有泛光照明系統之全天候緩跑徑及標準草地足球場。",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "預約須為香港中文大學學生、校友或會員。網站：<a href ='https://www.peu.cuhk.edu.hk/zh-tw/'  target='_blank'>中文大學體育部</a>"
             }
         }
     ]
@@ -6031,7 +6053,7 @@ var seven_a_side_list = {
                 "phone": "2384 1038",
                 "status": "open",
                 "number": "1",
-                "other": "非康文處球場。須為九龍華仁書院校友或會員，可當月及下月預訂。網址: <a href='https://wyk.edu.hk/sports-venue-reservation/' target='_blank'>預訂網址</a>"
+                "other": "非康文處球場。須為九龍華仁書院校友或會員，可當月及下月預訂。網站: <a href='https://wyk.edu.hk/sports-venue-reservation/' target='_blank'>預訂網站</a>"
             }
         },
         {
@@ -6109,7 +6131,7 @@ var seven_a_side_list = {
             "properties": {
                 "cate": "七人硬地足球場",
                 "type": "七人硬地足球場",
-                "name_chi": "兆康苑七人硬地足球場",
+                "name_chi": "兆康苑足球場",
                 "address": "屯門兆康苑兆康路2號",
                 "district": "屯門區",
                 "icon": "small_blue",
@@ -6143,7 +6165,52 @@ var seven_a_side_list = {
                 "number": "1",
                 "other": "非康文處球場。"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.05992287293208, 22.347196490146708]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "馬灣足球場",
+                "address": "荃灣馬灣珀欣路(馬灣消防局對面)",
+                "district": "荃灣區",
+                "icon": "small_blue",
+                "icon_large": "large_blue",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.17495035663737, 22.31388014603495]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "九龍華仁書院硬地足球場",
+                "address": "油麻地窩打老道56號",
+                "district": "油尖旺區",
+                "icon": "small_turquoise",
+                "icon_large": "large_turquoise",
+                "opening_hours": "星期日：下午1時至下午5時<br>星期六及公眾假期（不包括星期日）：上午8時至下午5時",
+                "facilities": "",
+                "phone": "2384 1038",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。須為九龍華仁書院校友或會員，可當月及下月預訂。網站: <a href='https://wyk.edu.hk/sports-venue-reservation/' target='_blank'>預訂網站</a>"
+            }
         }
+
     ]
 };
 
@@ -6258,6 +6325,50 @@ var natural_seven_a_side_list = {
                 "status": "open",
                 "number": "1 (面積：57米 x 43米)",
                 "other": "球場面積：57米 x 43米"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.20940007729008, 22.415156674948538]
+            },
+            "properties": {
+                "cate": "七人天然草足球場",
+                "type": "七人天然草足球場",
+                "name_chi": "嶺南七人足球場",
+                "address": "沙田馬料水香港中文大學嶺南運動場",
+                "district": "沙田區",
+                "icon": "small_darkgreen",
+                "icon_large": "large_darkgreen",
+                "opening_hours": "<a href ='https://www.peu.cuhk.edu.hk/zh-tw/facilities/opening-hours' target='_blank'>場地開放時間表</a>",
+                "facilities": "可劃分為一個11人足球場或兩個7人足球場。裝有泛光照明系統之全天候緩跑徑及標準草地足球場。",
+                "phone": "",
+                "status": "open",
+                "number": "2",
+                "other": "預約須為香港中文大學學生、校友或會員。網站：<a href ='https://www.peu.cuhk.edu.hk/zh-tw/'  target='_blank'>中文大學體育部</a>"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.21198249939523, 22.419009499807277]
+            },
+            "properties": {
+                "cate": "七人天然草足球場",
+                "type": "七人天然草足球場",
+                "name_chi": "夏鼎基七人足球場",
+                "address": "沙田馬料水香港中文大學夏鼎基運動場",
+                "district": "沙田區",
+                "icon": "small_darkgreen",
+                "icon_large": "large_darkgreen",
+                "opening_hours": "<a href ='https://www.peu.cuhk.edu.hk/zh-tw/facilities/opening-hours' target='_blank'>場地開放時間表</a>",
+                "facilities": "可劃分為一個11人足球場或兩個7人足球場。裝有泛光照明系統之全天候標準田徑場及標準草地足球場，並設可容納二千人之觀眾席，以便舉行大型活動之用。",
+                "phone": "",
+                "status": "open",
+                "number": "2",
+                "other": "預約須為香港中文大學學生、校友或會員。網站：<a href ='https://www.peu.cuhk.edu.hk/zh-tw/'  target='_blank'>中文大學體育部</a>"
             }
         }
     ]
@@ -6593,7 +6704,29 @@ var artificial_seven_a_side_list = {
                 "phone": "6627 1606",
                 "status": "open",
                 "number": "2",
-                "other": "收費：$440-600/ 一小時。網址: <a href='https://www.goparksaisha.hk/tc/sport/football/' target='_blank'>預訂網址</a>"
+                "other": "收費：$440-600/ 一小時。網站: <a href='https://www.goparksaisha.hk/tc/sport/football/' target='_blank'>預訂網站</a>"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.19629473823004, 22.469764083331075]
+            },
+            "properties": {
+                "cate": "七人人造草足球場",
+                "type": "七人人造草足球場",
+                "name_chi": "和富慈善基金李宗德足球場",
+                "address": "大埔汀角香港教育大學",
+                "district": "大埔區",
+                "icon": "small_limegreen",
+                "icon_large": "small_limegreen",
+                "opening_hours": "",
+                "facilities": "星期一至六：上午8時半至晚上9時半<br>星期日：下午1時半至下午5時半<br>公眾假期休息。",
+                "phone": "2948 8844",
+                "status": "open",
+                "number": "1",
+                "other": "預約須為香港教育大學學生、校友或會員。網站：<a href ='https://www.eduhk.hk/eo/sports'  target='_blank'>教育大學網站</a>"
             }
         }
     ]
@@ -7259,7 +7392,7 @@ var natural_11_a_side_list = {
                 "phone": "2661 4211, WHATSAPP: 5957 4924",
                 "status": "open",
                 "number": "3",
-                "other": "非康文處球場。不能租用。網址: <a href='https://www.hkfa.com/football-training-centre' target='_blank'>足球訓練中心網址</a>"
+                "other": "非康文處球場。不能租用。網站: <a href='https://www.hkfa.com/football-training-centre' target='_blank'>足球訓練中心網站</a>"
             }
         },
         {
@@ -7342,12 +7475,122 @@ var natural_11_a_side_list = {
                 "district": "九龍城區",
                 "icon": "small_teal",
                 "icon_large": "large_teal",
-                "opening_hours": "<a href ='https://www.kaitaksportspark.com.hk/eventsTickets'>活動及門票</a>",
+                "opening_hours": "<a href ='https://www.kaitaksportspark.com.hk/eventsTickets' target='_blank'>活動及門票</a>",
                 "facilities": "草地球場、可容納50,000人、開合式天幕",
                 "phone": "3711 5050",
                 "status": "open",
                 "number": "1",
-                "other": "網站：<a href ='https://www.kaitaksportspark.com.hk/landing'  target='_blank'>啟德主場館網址</a>"
+                "other": "網站：<a href ='https://www.kaitaksportspark.com.hk/landing'  target='_blank'>啟德主場館網站</a>"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.2094048855118, 22.414709173220665]
+            },
+            "properties": {
+                "cate": "十一人天然草足球場",
+                "type": "十一人天然草足球場",
+                "name_chi": "嶺南足球場",
+                "address": "沙田馬料水香港中文大學嶺南運動場",
+                "district": "沙田區",
+                "icon": "small_teal",
+                "icon_large": "large_teal",
+                "opening_hours": "<a href ='https://www.peu.cuhk.edu.hk/zh-tw/facilities/opening-hours' target='_blank'>場地開放時間表</a>",
+                "facilities": "可劃分為一個11人足球場或兩個7人足球場。裝有泛光照明系統之全天候緩跑徑及標準草地足球場。",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "預約須為香港中文大學學生、校友或會員。網站：<a href ='https://www.peu.cuhk.edu.hk/zh-tw/'  target='_blank'>中文大學體育部</a>"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.21198562827028, 22.418604564164834]
+            },
+            "properties": {
+                "cate": "十一人天然草足球場",
+                "type": "十一人天然草足球場",
+                "name_chi": "夏鼎基足球場",
+                "address": "沙田馬料水香港中文大學夏鼎基運動場",
+                "district": "沙田區",
+                "icon": "small_teal",
+                "icon_large": "large_teal",
+                "opening_hours": "<a href ='https://www.peu.cuhk.edu.hk/zh-tw/facilities/opening-hours' target='_blank'>場地開放時間表</a>",
+                "facilities": "可劃分為一個11人足球場或兩個7人足球場。裝有泛光照明系統之全天候標準田徑場及標準草地足球場，並設可容納二千人之觀眾席，以便舉行大型活動之用。",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "預約須為香港中文大學學生、校友或會員。網站：<a href ='https://www.peu.cuhk.edu.hk/zh-tw/'  target='_blank'>中文大學體育部</a>"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.20022825121319, 22.43041195065267]
+            },
+            "properties": {
+                "cate": "十一人天然草足球場",
+                "type": "十一人天然草足球場",
+                "name_chi": "香港教育大學運動中心",
+                "address": "大埔滘吐露港公路香港教育學院白石角運動中心",
+                "district": "大埔區",
+                "icon": "small_teal",
+                "icon_large": "large_teal",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "2638 1245",
+                "status": "open",
+                "number": "1",
+                "other": "預約須為香港教育大學學生、校友或會員。網站：<a href ='https://www.eduhk.hk/eo/sports'  target='_blank'>教育大學網站</a><br>大學保留因清潔、翻新或維護目的而關閉任何部分設施的權利。"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.12522617596083, 22.26694094709014]
+            },
+            "properties": {
+                "cate": "十一人天然草足球場",
+                "type": "十一人天然草足球場",
+                "name_chi": "何鴻燊體育中心三號草地足球場",
+                "address": "薄扶林沙灣徑香港大學何鴻燊體育中心",
+                "district": "南區",
+                "icon": "small_teal",
+                "icon_large": "large_teal",
+                "opening_hours": "上午7時至晚上10時半",
+                "facilities": "3號場地位於運動場中心，是唯一可用於足球和場地比賽的天然草場。裝有泛光照明系統。觀眾席座位數：約800個。",
+                "phone": "3910 3244",
+                "status": "open",
+                "number": "1",
+                "other": "預約須為香港大學學生、校友或會員。網站：<a href ='https://www.cse.hku.hk/facilities.asp?pageid=120#collapse01'  target='_blank'>香港大學網站</a>"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.18289273838248, 22.33776351565209]
+            },
+            "properties": {
+                "cate": "十一人天然草足球場",
+                "type": "十一人天然草足球場",
+                "name_chi": "聯校運動中心",
+                "address": "九龍塘聯福道36號聯校運動中心",
+                "district": "九龍城區",
+                "icon": "small_teal",
+                "icon_large": "large_teal",
+                "opening_hours": "<a href ='https://jsc.hkbu.edu.hk/timeallotment_ch.html'  target='_blank'>各院校場地使用時間表</a>",
+                "facilities": "國際標準草地足球場、國際標準八線道全天候跑道、有蓋停車場供使用者使用、設有密碼鎖儲物櫃及投幣式儲物櫃之更衣室多、用途室：可容納六十人的會議室及田徑比賽記錄室、控制室：配備廣播設備及田徑比賽電子計時系統、可容納一千人的有蓋觀眾席、急救室",
+                "phone": "2794 1168",
+                "status": "open",
+                "number": "1",
+                "other": "預約須為城市大學、理工大學和浸會大學學生、校友或會員。網站：<a href ='https://jsc.hkbu.edu.hk/facilitycharge_ch.html'  target='_blank'>聯校運動中心網站</a>"
             }
         }
     ]
@@ -7793,7 +8036,7 @@ var artificial_11_a_side_list = {
                 "phone": "",
                 "status": "open",
                 "number": "2",
-                "other": "非康文處球場。可於每月1號至20號申請下月租用時段。網址: <a href='https://www.kitchee.com/jckc' target='_blank'>預訂網址</a>"
+                "other": "非康文處球場。可於每月1號至20號申請下月租用時段。網站: <a href='https://www.kitchee.com/jckc' target='_blank'>預訂網站</a>"
             }
         },
         {
@@ -7815,7 +8058,7 @@ var artificial_11_a_side_list = {
                 "phone": "2661 4211, WHATSAPP：5957 4924",
                 "status": "open",
                 "number": "3",
-                "other": "非康文處球場。仿真草足球場（4至6號球場）可於2個月前提前訂用。網址: <a href='https://www.hkfa.com/football-training-centre' target='_blank'>預訂網址</a>"
+                "other": "非康文處球場。仿真草足球場（4至6號球場）可於2個月前提前訂用。網站: <a href='https://www.hkfa.com/football-training-centre' target='_blank'>預訂網站</a>"
             }
         },
         {
@@ -7837,7 +8080,7 @@ var artificial_11_a_side_list = {
                 "phone": "2332 7112",
                 "status": "open",
                 "number": "3",
-                "other": "非康文處球場。可提前一個月填寫申請表預訂。網址: <a href='https://www.kingspark.com.hk/price-list' target='_blank'>預訂網址</a>"
+                "other": "非康文處球場。可提前一個月填寫申請表預訂。網站: <a href='https://www.kingspark.com.hk/price-list' target='_blank'>預訂網站</a>"
             }
         },
         {
@@ -7859,7 +8102,7 @@ var artificial_11_a_side_list = {
                 "phone": "2384 1038",
                 "status": "open",
                 "number": "1",
-                "other": "非康文處球場。須為九龍華仁書院校友或會員，可當月及下月預訂。網址: <a href='https://wyk.edu.hk/artificial-grass-football-pitch-booking/' target='_blank'>預訂網址</a>"
+                "other": "非康文處球場。須為九龍華仁書院校友或會員，可當月及下月預訂。網站: <a href='https://wyk.edu.hk/artificial-grass-football-pitch-booking/' target='_blank'>預訂網站</a>"
             }
         },
         {
@@ -7881,7 +8124,7 @@ var artificial_11_a_side_list = {
                 "phone": "3711 5050",
                 "status": "open",
                 "number": "1",
-                "other": "港幣 $1,800/ 一小時三十分鐘。每個會員帳戶最多預訂每日一個段節。網址: <a href='https://www.kaitaksportspark.com.hk/facilitiesBookingDetail?id=2024061400000146' target='_blank'>預訂網址</a>"
+                "other": "港幣 $1,800/ 一小時三十分鐘。每個會員帳戶最多預訂每日一個段節。網站: <a href='https://www.kaitaksportspark.com.hk/facilitiesBookingDetail?id=2024061400000146' target='_blank'>預訂網站</a>"
             }
         },
         {
@@ -7903,7 +8146,95 @@ var artificial_11_a_side_list = {
                 "phone": "6627 1606",
                 "status": "open",
                 "number": "1",
-                "other": "收費：$440-600/ 一小時。網址: <a href='https://www.goparksaisha.hk/tc/sport/football/' target='_blank'>預訂網址</a>"
+                "other": "收費：$440-600/ 一小時。網站: <a href='https://www.goparksaisha.hk/tc/sport/football/' target='_blank'>預訂網站</a>"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.20094379952465, 22.429417310385396]
+            },
+            "properties": {
+                "cate": "十一人人造草足球場",
+                "type": "十一人人造草足球場",
+                "name_chi": "香港教育大學運動中心",
+                "address": "大埔滘吐露港公路香港教育學院白石角運動中心",
+                "district": "大埔區",
+                "icon": "small_turquoise",
+                "icon_large": "large_turquoise",
+                "opening_hours": "星期一至六：下午1時半至晚上9時半<br>週日及公眾假期關閉",
+                "facilities": "",
+                "phone": "2638 1245",
+                "status": "open",
+                "number": "1",
+                "other": "預約須為香港教育大學學生、校友或會員。網站：<a href ='https://www.eduhk.hk/eo/sports'  target='_blank'>教育大學網站</a><br>大學保留因清潔、翻新或維護目的而關閉任何部分設施的權利。"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.26838678305373, 22.33713680512576]
+            },
+            "properties": {
+                "cate": "十一人人造草足球場",
+                "type": "十一人人造草足球場",
+                "name_chi": "霍英東體育中心",
+                "address": "西貢清水灣香港科技大學",
+                "district": "西貢區",
+                "icon": "small_turquoise",
+                "icon_large": "large_turquoise",
+                "opening_hours": "上午7時至晚上10時",
+                "facilities": "標準尺寸人造草皮足球場和400米8跑道田徑跑道，均配有泛光燈",
+                "phone": "2358 8688",
+                "status": "open",
+                "number": "1",
+                "other": "預約須為香港科技大學學生、校友或會員。網站：<a href ='https://dst.hkust.edu.hk/eng/detail.php?catid=14&sid=195&tid=211'  target='_blank'>科技大學網站</a>"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.12364081996017, 22.269073159195244]
+            },
+            "properties": {
+                "cate": "十一人人造草足球場",
+                "type": "十一人人造草足球場",
+                "name_chi": "鴻燊體育中心一二號人造草地足球場",
+                "address": "薄扶林沙灣徑香港大學何鴻燊體育中心",
+                "district": "南區",
+                "icon": "small_turquoise",
+                "icon_large": "large_turquoise",
+                "opening_hours": "上午7時至晚上10時半",
+                "facilities": "裝有泛光照明系統。1號場地是何鴻燊體育中心最早的人工草皮場地之一，專用於足球、橄欖球和長曲棍球。2號場地分為三個區域：P2A和P2B，專用於曲棍球和足球；P2C，專用於曲棍球、足球和長曲棍球。",
+                "phone": "3910 3244",
+                "status": "open",
+                "number": "2",
+                "other": "預約須為香港大學學生、校友或會員。網站：<a href ='https://www.cse.hku.hk/facilities.asp?pageid=120#collapse01'  target='_blank'>香港大學網站</a>"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.98132304027902, 22.41255455697916]
+            },
+            "properties": {
+                "cate": "十一人人造草足球場",
+                "type": "十一人人造草足球場",
+                "name_chi": "潘蘇通運動場",
+                "address": "屯門青山公路八號嶺南大學",
+                "district": "屯門區",
+                "icon": "small_turquoise",
+                "icon_large": "large_turquoise",
+                "opening_hours": "",
+                "facilities": "一個FIFA標準人工草皮足球場；6道跑道；場地設施包括跳高、跳遠和其他投擲項目；2個帶泛光燈的網球場；戶外健身區。",
+                "phone": "2616 8888",
+                "status": "open",
+                "number": "1",
+                "other": "預約須為嶺南大學學生、校友或會員。網站：<a href ='https://www.ln.edu.hk/cht/ocdm/facilities/sports'  target='_blank'>嶺南大學網站</a>"
             }
         }
     ]
