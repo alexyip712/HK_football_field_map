@@ -2682,7 +2682,7 @@ var five_a_side_list = {
                 "phone": "2661 4211, WHATSAPP: 5957 4924",
                 "status": "open",
                 "number": "1",
-                "other": "非康文處球場。不能租用。網址: <a href='https://www.hkfa.com/football-training-centre'>足球訓練中心網址</a>"
+                "other": "非康文處球場。不能租用。網址: <a href='https://www.hkfa.com/football-training-centre' target='_blank'>足球訓練中心網址</a>"
             }
         },
         {
@@ -2704,7 +2704,7 @@ var five_a_side_list = {
                 "phone": "3711 5050, 6996 9525",
                 "status": "open",
                 "number": "1",
-                "other": "網址: <a href='https://www.kaitaksportspark.com.hk/facilitiesBookingDetail?id=2025050900000243'>預訂網址</a>"
+                "other": "網址: <a href='https://www.kaitaksportspark.com.hk/facilitiesBookingDetail?id=2025050900000243' target='_blank'>預訂網址</a>"
             }
         },
         {
@@ -6031,7 +6031,7 @@ var seven_a_side_list = {
                 "phone": "2384 1038",
                 "status": "open",
                 "number": "1",
-                "other": "非康文處球場。須為九龍華仁書院校友或會員，可當月及下月預訂。網址: <a href='https://wyk.edu.hk/sports-venue-reservation/'>預訂網址</a>"
+                "other": "非康文處球場。須為九龍華仁書院校友或會員，可當月及下月預訂。網址: <a href='https://wyk.edu.hk/sports-venue-reservation/' target='_blank'>預訂網址</a>"
             }
         },
         {
@@ -6593,7 +6593,7 @@ var artificial_seven_a_side_list = {
                 "phone": "6627 1606",
                 "status": "open",
                 "number": "2",
-                "other": "收費：$440-600/ 一小時。網址: <a href='https://www.goparksaisha.hk/tc/sport/football/'>預訂網址</a>"
+                "other": "收費：$440-600/ 一小時。網址: <a href='https://www.goparksaisha.hk/tc/sport/football/' target='_blank'>預訂網址</a>"
             }
         }
     ]
@@ -7259,7 +7259,7 @@ var natural_11_a_side_list = {
                 "phone": "2661 4211, WHATSAPP: 5957 4924",
                 "status": "open",
                 "number": "3",
-                "other": "非康文處球場。不能租用。網址: <a href='https://www.hkfa.com/football-training-centre'>足球訓練中心網址</a>"
+                "other": "非康文處球場。不能租用。網址: <a href='https://www.hkfa.com/football-training-centre' target='_blank'>足球訓練中心網址</a>"
             }
         },
         {
@@ -7298,7 +7298,7 @@ var natural_11_a_side_list = {
                 "district": "油尖旺區",
                 "icon": "small_teal",
                 "icon_large": "large_teal",
-                "opening_hours": "<a href ='https://www.lcsd.gov.hk/tc/stadium/mks/event.html'>每月節目表</a>",
+                "opening_hours": "<a href ='https://www.lcsd.gov.hk/tc/stadium/mks/event.html' target='_blank'>每月節目表</a>",
                 "facilities": "<ul><li>符合國際標準的草地球場並附設照明系統</li><li>電子計分顯示屏幕</li><li>可容納六千六百位觀眾座位</li><li>一百二十七位貴賓席座位</li><li>三十九個輪椅位</li><li>四間運動員更衣室</li><li>兩間裁判員更衣室</li><li>一間貴賓室</li><li>一間多用途室</li><li>一間會議室</li><li>一間傳媒中心</li><li>一間救護室</li><li>一間藥檢室</li><li>兩間節目控制室</li><li>一間電子計分顯示屏控制室</li><li>八個售票處</li><li>一間小食亭</li><li>一間育嬰間</li><li>公眾人士及暢通易達洗手間</li><li>二十個車位停車場（十六個車位供私家車、一個供殘疾人士、兩個供旅遊巴及一個供電單車使用",
                 "phone": "2380 0188(辦公時間)",
                 "status": "open",
@@ -7320,7 +7320,7 @@ var natural_11_a_side_list = {
                 "district": "灣仔區",
                 "icon": "small_teal",
                 "icon_large": "large_teal",
-                "opening_hours": "<a href ='https://www.lcsd.gov.hk/tc/stadium/hks/events.html'>每月節目表</a>",
+                "opening_hours": "<a href ='https://www.lcsd.gov.hk/tc/stadium/hks/events.html' target='_blank'>每月節目表</a>",
                 "facilities": "草地球場、40,000個座位、飲食設施，38個洗手間，50間廂房",
                 "phone": "2380 0188(辦公時間)",
                 "status": "open",
@@ -7347,7 +7347,7 @@ var natural_11_a_side_list = {
                 "phone": "3711 5050",
                 "status": "open",
                 "number": "1",
-                "other": "網站：<a href ='https://www.kaitaksportspark.com.hk/landing'>啟德主場館網址</a>"
+                "other": "網站：<a href ='https://www.kaitaksportspark.com.hk/landing'  target='_blank'>啟德主場館網址</a>"
             }
         }
     ]
@@ -7793,7 +7793,7 @@ var artificial_11_a_side_list = {
                 "phone": "",
                 "status": "open",
                 "number": "2",
-                "other": "非康文處球場。可於每月1號至20號申請下月租用時段。網址: <a href='https://www.kitchee.com/jckc'>預訂網址</a>"
+                "other": "非康文處球場。可於每月1號至20號申請下月租用時段。網址: <a href='https://www.kitchee.com/jckc' target='_blank'>預訂網址</a>"
             }
         },
         {
@@ -7815,7 +7815,7 @@ var artificial_11_a_side_list = {
                 "phone": "2661 4211, WHATSAPP：5957 4924",
                 "status": "open",
                 "number": "3",
-                "other": "非康文處球場。仿真草足球場（4至6號球場）可於2個月前提前訂用。網址: <a href='https://www.hkfa.com/football-training-centre'>預訂網址</a>"
+                "other": "非康文處球場。仿真草足球場（4至6號球場）可於2個月前提前訂用。網址: <a href='https://www.hkfa.com/football-training-centre' target='_blank'>預訂網址</a>"
             }
         },
         {
@@ -7837,7 +7837,7 @@ var artificial_11_a_side_list = {
                 "phone": "2332 7112",
                 "status": "open",
                 "number": "3",
-                "other": "非康文處球場。可提前一個月填寫申請表預訂。網址: <a href='https://www.kingspark.com.hk/price-list'>預訂網址</a>"
+                "other": "非康文處球場。可提前一個月填寫申請表預訂。網址: <a href='https://www.kingspark.com.hk/price-list' target='_blank'>預訂網址</a>"
             }
         },
         {
@@ -7859,7 +7859,7 @@ var artificial_11_a_side_list = {
                 "phone": "2384 1038",
                 "status": "open",
                 "number": "1",
-                "other": "非康文處球場。須為九龍華仁書院校友或會員，可當月及下月預訂。網址: <a href='https://wyk.edu.hk/artificial-grass-football-pitch-booking/'>預訂網址</a>"
+                "other": "非康文處球場。須為九龍華仁書院校友或會員，可當月及下月預訂。網址: <a href='https://wyk.edu.hk/artificial-grass-football-pitch-booking/' target='_blank'>預訂網址</a>"
             }
         },
         {
@@ -7881,7 +7881,7 @@ var artificial_11_a_side_list = {
                 "phone": "3711 5050",
                 "status": "open",
                 "number": "1",
-                "other": "港幣 $1,800/ 一小時三十分鐘。每個會員帳戶最多預訂每日一個段節。網址: <a href='https://www.kaitaksportspark.com.hk/facilitiesBookingDetail?id=2024061400000146'>預訂網址</a>"
+                "other": "港幣 $1,800/ 一小時三十分鐘。每個會員帳戶最多預訂每日一個段節。網址: <a href='https://www.kaitaksportspark.com.hk/facilitiesBookingDetail?id=2024061400000146' target='_blank'>預訂網址</a>"
             }
         },
         {
@@ -7903,7 +7903,7 @@ var artificial_11_a_side_list = {
                 "phone": "6627 1606",
                 "status": "open",
                 "number": "1",
-                "other": "收費：$440-600/ 一小時。網址: <a href='https://www.goparksaisha.hk/tc/sport/football/'>預訂網址</a>"
+                "other": "收費：$440-600/ 一小時。網址: <a href='https://www.goparksaisha.hk/tc/sport/football/' target='_blank'>預訂網址</a>"
             }
         }
     ]
