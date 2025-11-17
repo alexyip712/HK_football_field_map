@@ -2945,6 +2945,28 @@ var five_a_side_list = {
                 "facilities": "多用途硬地球場（可作一個七人足球場或兩個五人足球場或兩個手球場）、有蓋看台、健身設施及園景等設施。",
                 "phone": "",
                 "status": "open",
+                "number": "2",
+                "other": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.96879029953969, 22.40246701585203]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "大興邨足球場",
+                "address": "屯門大興邨",
+                "district": "屯門區",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
                 "number": "1",
                 "other": ""
             }
