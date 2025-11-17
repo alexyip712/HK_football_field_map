@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         'attribution': '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     }
                 },
-                'glyphs': 'https://fonts.openmaptiles.org/{fontstack}/{range}.pbf',
+                "glyphs": "https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
                 'layers': [{
                     'id': 'osm-tiles',
                     'type': 'raster',
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ...f,
                 properties: {
                     ...f.properties,
-                    clean_name_chi: f.properties.name_chi.replace(/\s*\(.*\)/, '')
+                    clean_name_chi: f.properties.name_chi
                 }
             }));
             if (searchTerm) {
@@ -407,7 +407,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     filter: ['==', 'cate', '七人硬地足球場'],
                     layout: {
                         'text-field': ['get', 'clean_name_chi'],
-                        'text-font': ['Noto Sans TC Bold'],
+                        'text-font': ['Noto Sans Bold'],
                         'text-size': 12,
                         'text-offset': [0, 1.5],
                         'text-anchor': 'top',
@@ -428,7 +428,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     filter: ['==', 'cate', '五人硬地足球場'],
                     layout: {
                         'text-field': ['get', 'clean_name_chi'],
-                        'text-font': ['Noto Sans TC Bold'],
+                        'text-font': ['Noto Sans Bold'],                        
                         'text-size': 12,
                         'text-offset': [0, 1.5],
                         'text-anchor': 'top',
@@ -447,13 +447,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     source: 'football-fields',
                     minzoom: 14,
                     filter: ['==', 'cate', '十一人人造草足球場'],
-                    layout: {
+                    layout: {                        
                         'text-field': ['get', 'clean_name_chi'],
-                        'text-font': ['Noto Sans TC Bold'],
+                        'text-font': ['Noto Sans Bold'],
                         'text-size': 12,
                         'text-offset': [0, 1.5],
                         'text-anchor': 'top',
-                        'text-allow-overlap': true
+                        'text-allow-overlap': false
                     },
                     paint: {
                         'text-color': '#a84300ff',
@@ -470,11 +470,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     filter: ['==', 'cate', '十一人天然草足球場'],
                     layout: {
                         'text-field': ['get', 'clean_name_chi'],
-                        'text-font': ['Noto Sans TC Bold'],
+                        'text-font': ['Noto Sans Bold'],                        
                         'text-size': 12,
                         'text-offset': [0, 1.5],
                         'text-anchor': 'top',
-                        'text-allow-overlap': true
+                        'text-allow-overlap': false
                     },
                     paint: {
                         'text-color': '#3a0055ff',
@@ -491,11 +491,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     filter: ['==', 'cate', '七人天然草足球場'],
                     layout: {
                         'text-field': ['get', 'clean_name_chi'],
-                        'text-font': ['Noto Sans TC Bold'],
+                        'text-font': ['Noto Sans Bold'],                        
                         'text-size': 12,
                         'text-offset': [0, 1.5],
                         'text-anchor': 'top',
-                        'text-allow-overlap': true
+                        'text-allow-overlap': false
                     },
                     paint: {
                         'text-color': '#fffd75ff',
@@ -512,7 +512,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     filter: ['==', 'cate', '七人人造草足球場'],
                     layout: {
                         'text-field': ['get', 'clean_name_chi'],
-                        'text-font': ['Noto Sans TC Bold'],
+                        'text-font': ['Noto Sans Bold'],                        
                         'text-size': 12,
                         'text-offset': [0, 1.5],
                         'text-anchor': 'top',

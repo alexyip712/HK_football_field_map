@@ -2828,7 +2828,7 @@ var five_a_side_list = {
                 "type": "五人硬地足球場",
                 "name_chi": "嶺南五人足球場",
                 "address": "沙田馬料水香港中文大學嶺南運動場",
-                "district": "沙田",
+                "district": "沙田區",
                 "icon": "small_green",
                 "icon_large": "large_green",
                 "opening_hours": "<a href ='https://www.peu.cuhk.edu.hk/zh-tw/facilities/opening-hours' target='_blank'>場地開放時間表</a>",
