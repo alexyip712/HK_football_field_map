@@ -8202,7 +8202,7 @@ var artificial_11_a_side_list = {
             "properties": {
                 "cate": "十一人人造草足球場",
                 "type": "十一人人造草足球場",
-                "name_chi": "鴻燊體育中心一二號人造草地足球場",
+                "name_chi": "何鴻燊體育中心一、二號人造草地足球場",
                 "address": "薄扶林沙灣徑香港大學何鴻燊體育中心",
                 "district": "南區",
                 "icon": "small_turquoise",
