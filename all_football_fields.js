@@ -113,7 +113,7 @@ var five_a_side_list = {
             "properties": {
                 "cate": "五人硬地足球場",
                 "type": "五人硬地足球場",
-                "name_chi": "柴灣公園",
+                "name_chi": "柴灣公園(一號足球場)",
                 "address": "柴灣怡盛街(一號足球場)",
                 "district": "東區",
                 "icon": "small_green",
@@ -236,7 +236,7 @@ var five_a_side_list = {
                 "cate": "五人硬地足球場",
                 "type": "五人硬地足球場",
                 "name_chi": "東涌北公園",
-                "address": "新界東涌文東路29號 (查詢訂場︰2852 4845)",
+                "address": "新界東涌文東路29號",
                 "district": "離島區",
                 "icon": "small_green",
                 "icon_large": "large_green",
@@ -245,7 +245,7 @@ var five_a_side_list = {
                 "phone": "2109 3423(辦公時間)",
                 "status": "open",
                 "number": "3",
-                "other": "未提供"
+                "other": "查詢訂場︰2852 4845"
             }
         },
         {
@@ -8492,9 +8492,9 @@ var artificial_11_a_side_list = {
                 "district": "黃大仙區",
                 "icon": "small_turquoise",
                 "icon_large": "large_turquoise",
-                "opening_hours": "",
-                "facilities": "",
-                "phone": "",
+                "opening_hours": "上午8時至晚上10時30分",
+                "facilities": "流動觀眾看台 (約共400個座位)、泛光燈照明系統、更衣室、洗手間",
+                "phone": "2321 0126",
                 "status": "open",
                 "number": "1",
                 "other": ""
