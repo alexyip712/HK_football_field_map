@@ -338,7 +338,10 @@ class FootballMapApp {
             this.map.setLayoutProperty('hkgov-base-layer', 'visibility', 'visible');
             this.map.setLayoutProperty('hkgov-label-layer', 'visibility', 'visible');
         } else if (layerName === 'satellite') {
+            this.map.setLayoutProperty('satellite-layer', 'visibility', 'visible');            
+        }else if (layerName === 'satelliteW') {
             this.map.setLayoutProperty('satellite-layer', 'visibility', 'visible');
+            this.map.setLayoutProperty('hkgov-label-layer', 'visibility', 'visible');
         } else {
             this.map.setLayoutProperty('osm-layer', 'visibility', 'visible');
         }
@@ -549,7 +552,7 @@ class FootballMapApp {
 
     registerServiceWorker() {
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./HK_football_field_map/sw.js').catch(err => console.error('SW Error:', err));
+            navigator.serviceWorker.register('./sw.js').catch(err => console.error('SW Error:', err));
         }
     }
 }
