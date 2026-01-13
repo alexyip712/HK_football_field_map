@@ -373,6 +373,18 @@ class FootballMapApp {
         const coords = feature.geometry.coordinates;
         document.getElementById('btnDirections').href = `https://www.google.com/maps/dir/?api=1&destination=${coords[1]},${coords[0]}&destination_place_id=${encodeURIComponent(props.name_chi)}`;
 
+        document.getElementById('btnShare').onclick = (e) => {
+            e.preventDefault();
+            const typeCode = this.getHashSuffix(props.cate);
+            const shareUrl = `${window.location.origin}${window.location.pathname}?name=${encodeURIComponent(props.name_chi)}&type=${typeCode}`;
+            if (navigator.share) {
+                navigator.share({ title: props.name_chi, text: `睇下呢個球場: ${props.name_chi}`, url: shareUrl });
+            } else {
+                navigator.clipboard.writeText(shareUrl);
+                alert('連結已複製');
+            }
+        };
+
         const favBtn = document.getElementById('favActionBtn');
         const isFav = this.favorites.includes(props.uid);
         favBtn.classList.toggle('active', isFav);
