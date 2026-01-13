@@ -105,7 +105,7 @@ class FootballMapApp {
 
         // disable map rotation using touch rotation gesture
         this.map.touchZoomRotate.disableRotation();
-        
+
         this.map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'bottom-right');
 
         this.map.on('load', () => {
@@ -234,6 +234,7 @@ class FootballMapApp {
             const card = document.getElementById('infoCard');
             card.classList.remove('open', 'peek');
             card.classList.add('hidden');
+            document.title = '香港足球場地圖';
             history.pushState({}, '', window.location.pathname);
         });
         document.getElementById('locateBtn').addEventListener('click', () => this.locateUser());
@@ -548,7 +549,7 @@ class FootballMapApp {
 
     registerServiceWorker() {
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./sw.js').catch(err => console.error('SW Error:', err));
+            navigator.serviceWorker.register('./HK_football_field_map/sw.js').catch(err => console.error('SW Error:', err));
         }
     }
 }
