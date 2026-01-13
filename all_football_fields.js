@@ -113,8 +113,8 @@ var five_a_side_list = {
             "properties": {
                 "cate": "五人硬地足球場",
                 "type": "五人硬地足球場",
-                "name_chi": "柴灣公園(一號足球場)",
-                "address": "柴灣怡盛街(一號足球場)",
+                "name_chi": "柴灣公園",
+                "address": "柴灣怡盛街",
                 "district": "東區",
                 "icon": "small_green",
                 "icon_large": "large_green",
@@ -2946,7 +2946,7 @@ var five_a_side_list = {
                 "phone": "",
                 "status": "open",
                 "number": "2",
-                "other": ""
+                "other": "非康文處球場。"
             }
         },
         {
@@ -2968,7 +2968,29 @@ var five_a_side_list = {
                 "phone": "",
                 "status": "open",
                 "number": "1",
-                "other": ""
+                "other": "非康文處球場。"
+            }
+        }, 
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.18712383132369, 22.275134512382735]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "南華體育會天台人造草球場",
+                "address": "香港加路連山加路連山道88號南華體育會體育大廈(低座)天台",
+                "district": "屯門區",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "上午8時至晚上10時",
+                "facilities": "配有夜燈設備",
+                "phone": "2577 5367",
+                "status": "open",
+                "number": "1",
+                "other": "<a href='https://scaa.org.hk/%E9%8A%85%E9%91%BC%E7%81%A3%E6%9C%83%E6%89%80/%E5%A4%A9%E5%8F%B0%E4%BA%BA%E9%80%A0%E8%8D%89%E7%90%83%E5%A0%B4/' target='_blank'>南華體育會網站</a><br>使用人必須為南華體育會會員，可進行五人足球，如需作其他用途，請另行申請"
             }
         }
     ]
@@ -3187,7 +3209,7 @@ var seven_a_side_list = {
                 "cate": "七人硬地足球場",
                 "type": "七人硬地足球場",
                 "name_chi": "柴灣公園(二號足球場)",
-                "address": "柴灣翠灣街柴灣怡盛街 (一號足球場)柴灣翠灣街 (二號足球場)",
+                "address": "柴灣翠灣街 (二號足球場)",
                 "district": "東區",
                 "icon": "small_blue",
                 "icon_large": "large_blue",
@@ -3196,7 +3218,7 @@ var seven_a_side_list = {
                 "phone": "2898 7560(辦公時間)",
                 "status": "open",
                 "number": "2",
-                "other": "未提供"
+                "other": "柴灣怡盛街 (一號足球場)"
             }
         },
         {
@@ -3209,7 +3231,7 @@ var seven_a_side_list = {
                 "cate": "七人硬地足球場",
                 "type": "七人硬地足球場",
                 "name_chi": "柴灣公園(一號足球場)",
-                "address": "柴灣翠灣街柴灣怡盛街 (一號足球場)柴灣翠灣街 (二號足球場)",
+                "address": "柴灣怡盛街 (一號足球場)",
                 "district": "東區",
                 "icon": "small_blue",
                 "icon_large": "large_blue",
@@ -3218,7 +3240,7 @@ var seven_a_side_list = {
                 "phone": "2898 7560(辦公時間)",
                 "status": "open",
                 "number": "2",
-                "other": "未提供"
+                "other": "柴灣翠灣街 (二號足球場)"
             }
         },
         {
@@ -6170,28 +6192,6 @@ var seven_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [114.17431092251306, 22.31505651968191]
-            },
-            "properties": {
-                "cate": "七人硬地足球場",
-                "type": "七人硬地足球場",
-                "name_chi": "九龍華仁書院足球場",
-                "address": "油麻地窩打老道56號",
-                "district": "油尖旺區",
-                "icon": "small_blue",
-                "icon_large": "large_blue",
-                "opening_hours": "平日：下午1點至下午5點30分<br>星期六及公眾假期：上午8點至下午5點30分",
-                "facilities": "",
-                "phone": "2384 1038",
-                "status": "open",
-                "number": "1",
-                "other": "非康文處球場。須為九龍華仁書院校友或會員，可當月及下月預訂。網站: <a href='https://wyk.edu.hk/sports-venue-reservation/' target='_blank'>預訂網站</a>"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
                 "coordinates": [114.2312869297976, 22.41995900365785]
             },
             "properties": {
@@ -6506,7 +6506,7 @@ var natural_seven_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [114.18156689552043, 22.273132440046897]
+                "coordinates": [114.18146185799351, 22.272900842030204]
             },
             "properties": {
                 "cate": "七人天然草足球場",
@@ -6628,7 +6628,7 @@ var artificial_seven_a_side_list = {
                 "cate": "七人人造草足球場",
                 "type": "七人人造草足球場",
                 "name_chi": "鰂魚涌公園(1號球場)",
-                "address": "鰂魚涌近海堤街鰂魚涌近海堤街 (一號人造草球場)鰂魚涌海澤街 (二號人造草球場)",
+                "address": "鰂魚涌近海堤街 (一號人造草球場)",
                 "district": "東區",
                 "icon": "small_limegreen",
                 "icon_large": "large_limegreen",
@@ -6637,7 +6637,7 @@ var artificial_seven_a_side_list = {
                 "phone": "2513 8499",
                 "status": "open",
                 "number": "2",
-                "other": "未提供"
+                "other": "鰂魚涌海澤街 (二號人造草球場)"
             }
         },
         {
@@ -6650,7 +6650,7 @@ var artificial_seven_a_side_list = {
                 "cate": "七人人造草足球場",
                 "type": "七人人造草足球場",
                 "name_chi": "鰂魚涌公園(2號球場)",
-                "address": "鰂魚涌近海堤街鰂魚涌近海堤街 (一號人造草球場)鰂魚涌海澤街 (二號人造草球場)",
+                "address": "鰂魚涌海澤街 (二號人造草球場)",
                 "district": "東區",
                 "icon": "small_limegreen",
                 "icon_large": "large_limegreen",
@@ -6659,7 +6659,7 @@ var artificial_seven_a_side_list = {
                 "phone": "2513 8499",
                 "status": "open",
                 "number": "2",
-                "other": "未提供"
+                "other": "鰂魚涌近海堤街 (一號人造草球場)"
             }
         },
         {
@@ -6820,7 +6820,7 @@ var artificial_seven_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [114.182777811851, 22.27390171981523]
+                "coordinates": [114.18252080229011, 22.273777430307863]
             },
             "properties": {
                 "cate": "七人人造草足球場",
@@ -6842,7 +6842,7 @@ var artificial_seven_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [114.18238711056668, 22.271683271073208]
+                "coordinates": [114.18255308261395, 22.271797803042165]
             },
             "properties": {
                 "cate": "七人人造草足球場",
@@ -7508,7 +7508,7 @@ var natural_11_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [114.18176881628341, 22.27232915217828]
+                "coordinates": [114.1819651307377, 22.272463778150115]
             },
             "properties": {
                 "cate": "十一人天然草足球場",
@@ -7833,6 +7833,28 @@ var natural_11_a_side_list = {
                 "number": "1",
                 "other": "每節90分鐘，費用$168。網站：<a href ='https://www.wingyeefootball.com/%E5%A0%B4%E5%9C%B0%E9%A0%90%E8%A8%82'  target='_blank'>永義足球中心網站</a><br>球場位於水務處範圍，非授權車輛不淮駛入，車輛只可駛到閘口及掉頭離開，附近牛池灣公園停車場或彩雲商場可以泊車，再步行10分鐘到達。"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.1888150237563, 22.276283260039644]
+            },
+            "properties": {
+                "cate": "十一人天然草足球場",
+                "type": "十一人天然草足球場",
+                "name_chi": "紀律部隊人員體育及康樂會足球場",
+                "address": "香港掃桿埔棉花路8號",
+                "district": "灣仔區",
+                "icon": "small_teal",
+                "icon_large": "large_teal",
+                "opening_hours": "上午9時至晚上10時",
+                "facilities": "",
+                "phone": "2830 7733",
+                "status": "open",
+                "number": "1",
+                "other": "逢星期一暫停開放以作維修保養。<br><a href ='http://www.dssrc.com.hk/%E6%9C%83%E6%89%80%E8%A8%AD%E6%96%BD.html'  target='_blank'>紀律部隊人員體育及康樂會網站</a><br>足球場須由各紀律部隊負責人預訂。而每名會員入場前均須出示有效之會員證。足球場暫不接受個人訂場服務。"
+            }
         }
     ]
 };
@@ -8130,12 +8152,12 @@ var artificial_11_a_side_list = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [114.18345300436546, 22.27285568348632]
+                "coordinates": [114.18165974205536, 22.273703716522636]
             },
             "properties": {
                 "cate": "十一人人造草足球場",
                 "type": "十一人人造草足球場",
-                "name_chi": "跑馬地遊樂場(1, 2, 3, 4號球場)",
+                "name_chi": "跑馬地遊樂場(1號球場)",
                 "address": "香港跑馬地體育道",
                 "district": "灣仔區",
                 "icon": "small_turquoise",
@@ -8144,8 +8166,30 @@ var artificial_11_a_side_list = {
                 "facilities": "男、女更衣室及洗手間 (設有暢通易達洗手間)。泛光燈照明",
                 "phone": "2895 1523",
                 "status": "open",
-                "number": "4",
-                "other": "在跑馬地賽馬日及試閘時段暫停使用。3號球場為非標準11人足球場；1號球場可作欖球場用"
+                "number": "1",
+                "other": "在跑馬地賽馬日及試閘時段暫停使用。1號球場可作欖球場用"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.1830904252867, 22.272636308901607]
+            },
+            "properties": {
+                "cate": "十一人人造草足球場",
+                "type": "十一人人造草足球場",
+                "name_chi": "跑馬地遊樂場(2, 3, 4號球場)",
+                "address": "香港跑馬地體育道",
+                "district": "灣仔區",
+                "icon": "small_turquoise",
+                "icon_large": "large_turquoise",
+                "opening_hours": "上午8時至晚上11時",
+                "facilities": "男、女更衣室及洗手間 (設有暢通易達洗手間)。泛光燈照明",
+                "phone": "2895 1523",
+                "status": "open",
+                "number": "3",
+                "other": "在跑馬地賽馬日及試閘時段暫停使用。3號球場為非標準11人足球場"
             }
         },
         {
@@ -8498,6 +8542,50 @@ var artificial_11_a_side_list = {
                 "status": "open",
                 "number": "1",
                 "other": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.18168405279465, 22.27442362039216]
+            },
+            "properties": {
+                "cate": "十一人人造草足球場",
+                "type": "十一人人造草足球場",
+                "name_chi": "香港足球會足球場",
+                "address": "香港跑馬地體育道",
+                "district": "灣仔區",
+                "icon": "small_turquoise",
+                "icon_large": "large_turquoise",
+                "opening_hours": "",
+                "facilities": "一個標準的欖球／足球場，擁有完善的泛光燈照明系統，可容納多達2,750名觀眾。",
+                "phone": "2830 9500",
+                "status": "open",
+                "number": "1",
+                "other": "<a href='https://www.hkfc.com/zh/facilities/rugby-soccer-pitch/' target='_blank'>香港足球會網站</a><br>場地可供外界認可的團體舉辦各種比賽和錦標賽"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.1875151300463, 22.275728625190073]
+            },
+            "properties": {
+                "cate": "十一人人造草足球場",
+                "type": "十一人人造草足球場",
+                "name_chi": "南華體育會-賽馬會運動場",
+                "address": "香港加路連山加路連山道88號",
+                "district": "灣仔區",
+                "icon": "small_turquoise",
+                "icon_large": "large_turquoise",
+                "opening_hours": "上午10時至晚上9時30分",
+                "facilities": "設有仿真草足球/欖球場、多用途活動空間、有蓋沙灘球場、有蓋網球場及空中環型緩跑徑。看台、球證房、貴賓室、藥檢室、救護室及球員更衣室。",
+                "phone": "2839 2382",
+                "status": "open",
+                "number": "1",
+                "other": "<a href='https://scaa.org.hk/%E9%8A%85%E9%91%BC%E7%81%A3%E6%9C%83%E6%89%80/%E8%B3%BD%E9%A6%AC%E6%9C%83%E9%81%8B%E5%8B%95%E5%A0%B4/' target='_blank'>南華體育會網站</a><br>球場只供本會會員使用/團體租用。團體租賃請於活動舉行最少14日前提出申請，任何場地及其他費用需於活動舉行7日前付清。請填妥<a href='https://scaa.org.hk/%E8%A8%AD%E6%96%BD%E7%A7%9F%E8%B3%83/' target='_blank'>場地租賃表</a>以作申請。"
             }
         }
     ]

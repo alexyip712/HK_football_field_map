@@ -3,53 +3,145 @@
 <head>
     <meta name="google-site-verification" content="Nftltg8McIt4ZV6rUL8PmF60PdBopHUvKFSOkT3evko" />    
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>香港足球場地圖</title>
     <meta name="author" content="AlexYip">
     <meta name="description" content="香港足球場地圖 | 全港各區足球場地點、位置、開放時間、電話號碼、設施。有曬全港五人、七人、十一人、真草、人造草、石地足球場。想搵個場喺邊？即刻撳入嚟！">
     <meta name="keywords" content="真草足球場, 天然草足球場, 人造草足球場, 草地足球場, 康文署, 石地足球場, 十一人足球場, 五人足球場, 七人足球場, 足球場位置, 足球場地圖">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="custom.css">
-    <script src="https://unpkg.com/maplibre-gl@4.7.0/dist/maplibre-gl.js"></script>
+    <meta name="theme-color" content="#ffffff">    
     <link href="https://unpkg.com/maplibre-gl@4.7.0/dist/maplibre-gl.css" rel="stylesheet">
-    <script src="all_football_fields.js"></script>
-    <script src="maplibre.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div id="map"></div>
-    <div class="search-filter" id="searchFilter">
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="搜尋足球場名稱、地址或地區" aria-label="搜尋足球場名稱、地址或地區">
-            <div id="suggestions" class="suggestions"></div>
+
+    <div class="ui-container">
+        
+        <div class="top-bar">
+            <div class="search-container-relative" id="searchContainer">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="搜尋球場、地區..." aria-label="搜尋足球場" autocomplete="off">
+                    <button id="clearSearch" class="hidden" aria-label="清除"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div id="suggestions" class="suggestions-list hidden"></div>
+            </div>
+
+            <div class="filter-row">
+                <div class="filter-chips-container">
+                    </div>
+            </div>
         </div>
-        <select id="districtFilter" aria-label="選擇地區">
-            <option value="">所有地區</option>
-        </select>
-        <button id="clearFilter" class="clear-button">重設</button>
+
+        <div class="map-controls">
+            <div class="control-group">
+                <button id="layerBtn" class="icon-btn" aria-label="圖層">
+                    <i class="fa-solid fa-layer-group"></i>
+                </button>
+                <div id="layerMenu" class="layer-menu hidden">
+                    <button class="layer-option  active" data-layer="hkgov">政府地圖 (含MTR出口)</button>
+                    <button class="layer-option" data-layer="osm">OSM開源地圖</button>                    
+                    <button class="layer-option" data-layer="satellite">衛星</button>
+                </div>
+            </div>
+            
+            <button id="favFilterBtn" class="icon-btn" aria-label="只顯示收藏">
+                <i class="fa-regular fa-star"></i>
+            </button>
+
+            <button id="locateBtn" class="icon-btn" aria-label="定位">
+                <i class="fa-solid fa-location-crosshairs"></i>
+            </button>
+        </div>
+
+        <div id="infoCard" class="info-card hidden">
+            <div id="cardDragHandle" class="card-handle-bar">
+                <div class="card-handle-visual"></div>
+            </div>
+            
+            <button id="closeCard" class="close-card-btn"><i class="fa-solid fa-xmark"></i></button>
+            
+            <div class="card-scroll-content">
+                <div class="card-header">
+                    <div class="header-badges">
+                        <span id="cardTypeBadge" class="badge">類別</span>
+                        <span id="cardDistrictBadge" class="badge badge-outline">地區</span>
+                    </div>
+                    
+                    <div class="title-row">
+                        <h2 id="cardTitle">球場名稱</h2>
+                        <button id="favActionBtn" class="fav-action-btn" aria-label="加入收藏">
+                            <i class="fa-regular fa-star"></i>
+                        </button>
+                    </div>
+
+                    <p id="cardAddress"><i class="fa-solid fa-location-dot"></i> <span>地址</span></p>
+                </div>
+
+                <div class="card-actions">
+                    <a id="btnDirections" href="#" target="_blank" class="action-btn primary">
+                        <i class="fa-solid fa-diamond-turn-right"></i> 導航
+                    </a>
+                    <a id="btnShare" href="#" class="action-btn secondary">
+                        <i class="fa-solid fa-share-nodes"></i> 分享
+                    </a>
+                </div>
+
+                <div class="card-content">
+                    <div class="info-row">
+                        <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+                        <div class="info-text">
+                            <label>開放時間</label>
+                            <div id="cardHours" class="html-content">--</div>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-icon"><i class="fa-solid fa-hashtag"></i></div>
+                        <div class="info-text">
+                            <label>球場數目</label>
+                            <p id="cardNumber">--</p>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <div class="info-text">
+                            <label>設施 / 備註</label>
+                            <div id="cardFacilities" class="html-content">--</div>
+                        </div>
+                    </div>
+                    <div class="info-row" id="rowPhone">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-text">
+                            <label>聯絡電話</label>
+                            <p id="cardPhone">--</p>
+                        </div>
+                    </div>
+                    <div class="info-row hidden" id="rowOther">
+                        <div class="info-icon"><i class="fa-solid fa-circle-info"></i></div>
+                        <div class="info-text">
+                            <label>其他：</label>
+                            <div id="cardOther" class="html-content">--</div>
+                        </div>
+                    </div>
+                    <div class="info-footer">
+                        <a href="https://forms.gle/PCVTRoPjEFushPcN7" target="_blank" class="report-link">資料有誤？回報問題</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="info" class="card--custom card-hidden">
-        <div class="card-header">
-            <span id="branchStatus"></span>
-            <span id="branchName"></span>
-            <span class="close" aria-label="關閉資訊卡">×</span>
-            <span class="toggle-icon" id="toggleCard" aria-label="展開資訊卡"><i class="fa fa-chevron-up"></i></span>
-        </div>
-        <div class="card-body">
-            <span id="branchName"></span>
-            <span id="branchdistrict"></span><br>
-            <span id="branchDetail"></span>            
-            <ul>
-                <li id="opening_hours"></li>                
-                <li id="phone"></li>
-                <li id="number"></li>
-                <li id="facilities"></li>
-                <li id="other"></li>
-            </ul>
-        </div>
-        <div class="card-footer">
-            <a id="issueReport" href="https://forms.gle/PCVTRoPjEFushPcN7" target="_blank">資料有誤？請報料</a>
-        </div>
+
+    <div id="loader" class="loader-overlay">
+        <div class="spinner"></div>
+        <p>地圖載入中...</p>
     </div>
+
+    <script src="https://unpkg.com/maplibre-gl@4.7.0/dist/maplibre-gl.js"></script>
+    <script src="all_football_fields.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
-
