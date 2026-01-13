@@ -390,7 +390,7 @@ class FootballMapApp {
             const typeCode = this.getHashSuffix(props.cate);
             const shareUrl = `${window.location.origin}${window.location.pathname}?name=${encodeURIComponent(props.name_chi)}&type=${typeCode}`;
             if (navigator.share) {
-                navigator.share({ title: props.name_chi, text: `睇下呢個球場: ${props.name_chi}`, url: shareUrl });
+                navigator.share({ title: props.name_chi, text: `${props.name_chi}`, url: shareUrl });
             } else {
                 navigator.clipboard.writeText(shareUrl);
                 alert('連結已複製');
