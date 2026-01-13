@@ -63,6 +63,8 @@ class FootballMapApp {
         });
     }
 
+    
+
     getHashSuffix(cate) {
         if(cate.includes('五人')) return '5';
         if(cate.includes('七人') && cate.includes('硬地')) return '7';
@@ -95,6 +97,15 @@ class FootballMapApp {
             center: [114.17475, 22.367533], zoom: 11, maxBounds: [[113.6, 22.1], [114.6, 22.6]], maxZoom: 19,
         });
 
+        // disable map rotation using right click + drag
+        this.map.dragRotate.disable();
+
+        // disable map rotation using keyboard
+        this.map.keyboard.disable();
+
+        // disable map rotation using touch rotation gesture
+        this.map.touchZoomRotate.disableRotation();
+        
         this.map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'bottom-right');
 
         this.map.on('load', () => {
@@ -384,6 +395,12 @@ class FootballMapApp {
                 alert('連結已複製');
             }
         };
+
+        // URL Update with Shortcodes
+        const typeCode = this.getHashSuffix(props.cate);
+        const newUrl = `?name=${encodeURIComponent(props.name_chi)}&type=${typeCode}`;
+        history.pushState({}, '', newUrl);
+        document.title = `${props.name_chi} | 香港足球場地圖`;
 
         const favBtn = document.getElementById('favActionBtn');
         const isFav = this.favorites.includes(props.uid);
