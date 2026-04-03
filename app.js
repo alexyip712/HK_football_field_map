@@ -497,8 +497,24 @@ class FootballMapApp {
     handleUrlParams() {
         const params = new URLSearchParams(window.location.search);
         const name = params.get('name');
+        const typeParam = params.get('type'); // 取得網址上的 type 參數
+
         if (name) {
-            const found = this.allFeatures.find(f => f.properties.name_chi === name);
+            let found;
+            
+            // 如果網址有指定 type，則同時比對 name 和 type
+            if (typeParam) {
+                found = this.allFeatures.find(f => 
+                    f.properties.name_chi === name && 
+                    this.getHashSuffix(f.properties.cate) === typeParam
+                );
+            }
+            
+            // 如果沒有指定 type，或者找不到該 type (防呆)，則退回原本邏輯：只比對 name
+            if (!found) {
+                found = this.allFeatures.find(f => f.properties.name_chi === name);
+            }
+
             if (found) this.selectField(found);
         }
     }
