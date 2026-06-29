@@ -6451,6 +6451,28 @@ var seven_a_side_list = {
                 "number": "1",
                 "other": ""
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.17459206455511, 22.36600528375626]
+            },
+            "properties": {
+                "cate": "七人硬地足球場",
+                "type": "七人硬地足球場",
+                "name_chi": "顯徑邨足球場",
+                "address": "大圍顯徑邨顯和里",
+                "district": "沙田區",
+                "icon": "small_turquoise",
+                "icon_large": "large_turquoise",
+                "opening_hours": "",
+                "facilities": "",
+                "phone": "",
+                "status": "open",
+                "number": "1",
+                "other": "非康文處球場。"
+            }
         }
     ]
 };
@@ -7144,7 +7166,7 @@ var natural_11_a_side_list = {
                 "district": "觀塘區",
                 "icon": "small_teal",
                 "icon_large": "large_teal",
-                "opening_hours": "(以上九龍灣運動場的設施於二零二五年七月七日至九月十七日暫停開放。)上午8時至晚上10時30分 (以1小時30分為1節計算)",
+                "opening_hours": "(九龍灣運動場將於二零二六年一月二日至二零二六年九月二十九日暫停開放，以便進行翻新工程。)上午8時至晚上10時30分 (以1小時30分為1節計算)",
                 "facilities": "運動場內設有洗手間、更衣室及貯物櫃。無障礙設施：暢通易達洗手間、觸覺引路帶、觸覺點字及觸覺平面圖。設有30個泊車位(包括一個殘疾人士專用車位)及5個電單車位的收費停車場",
                 "phone": "2750 8512",
                 "status": "closed",
