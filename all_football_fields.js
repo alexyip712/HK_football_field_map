@@ -2992,6 +2992,28 @@ var five_a_side_list = {
                 "number": "1",
                 "other": "<a href='https://scaa.org.hk/%E9%8A%85%E9%91%BC%E7%81%A3%E6%9C%83%E6%89%80/%E5%A4%A9%E5%8F%B0%E4%BA%BA%E9%80%A0%E8%8D%89%E7%90%83%E5%A0%B4/' target='_blank'>南華體育會網站</a><br>使用人必須為南華體育會會員，可進行五人足球，如需作其他用途，請另行申請"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.1903085184228, 22.338599810363952]
+            },
+            "properties": {
+                "cate": "五人硬地足球場",
+                "type": "五人硬地足球場",
+                "name_chi": "摩士公園(三號公園)",
+                "address": "九龍黃大仙鳳舞街40號",
+                "district": "黃大仙區",
+                "icon": "small_green",
+                "icon_large": "large_green",
+                "opening_hours": "上午7時至晚上11時",
+                "facilities": "泛光燈系統。小食亭。更衣室。洗手間及暢通易達洗手間",
+                "phone": "2323 9665(辦公時間)",
+                "status": "open",
+                "number": "1",
+                "other": "未提供"
+            }
         }
     ]
 };
